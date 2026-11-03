@@ -106,7 +106,7 @@ Ricostruite, depositate e fotografate dopo il commit della macchina del tempo a 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=2f417c7e"><img src="immagini/numeri-chiaro.svg?v=7fe78a3c" alt="i numeri: 1616 contributi, 4 giorni di fila, 53 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=e176dc48"><img src="immagini/numeri-chiaro.svg?v=38ed920d" alt="i numeri: 1617 contributi, 4 giorni di fila, 53 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
