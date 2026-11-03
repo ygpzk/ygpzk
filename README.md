@@ -5,7 +5,7 @@
 -->
 
 <!-- testa:inizio -->
-<a href="https://www.albertopecchini.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/testa-scuro.svg"><img src="immagini/testa-chiaro.svg" alt="alberto pecchini — siti scritti a mano, un commit alla volta" width="100%"></picture></a>
+<a href="https://www.albertopecchini.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@b4a7238280b6/immagini/testa-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@b4a7238280b6/immagini/testa-chiaro.svg" alt="alberto pecchini — siti scritti a mano, un commit alla volta" width="100%"></picture></a>
 <!-- testa:fine -->
 
 <!-- tasti:inizio -->
@@ -106,7 +106,7 @@ Ricostruite, depositate e fotografate dopo il commit della macchina del tempo a 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=563e8041"><img src="immagini/numeri-chiaro.svg?v=ffe4ea61" alt="i numeri: 1615 contributi, 4 giorni di fila, 52 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=2f417c7e"><img src="immagini/numeri-chiaro.svg?v=7fe78a3c" alt="i numeri: 1616 contributi, 4 giorni di fila, 53 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
