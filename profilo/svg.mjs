@@ -109,11 +109,18 @@ export function testa(nome) {
   for (let x = xa; x < xb; x += onda) wave += ` q${onda / 4} ${-amp} ${onda / 2} 0 t${onda / 2} 0`
   wave += ` V${botB + 40} H${xa} Z`
   const sale = botB - topB + amp + 24
-  const inchiostro = `<clipPath id="pecchini-${nome}">${B.uses}</clipPath>
-    <g clip-path="url(#pecchini-${nome})"><g transform="translate(0 ${sale})">
+  // una maschera e non un clipPath: col clipPath fatto di <use> Chromium riempie
+  // anche l'occhio della «e»
+  const inchiostro = `<mask id="pecchini-${nome}" maskUnits="userSpaceOnUse" x="0" y="0" width="${W}" height="${H}"><g fill="#fff">${B.uses}</g></mask>
+    <g mask="url(#pecchini-${nome})"><g transform="translate(0 ${sale})">
       <animateTransform attributeName="transform" type="translate" values="0 ${sale};0 ${sale};0 ${sale * 0.55};0 -14;0 -14" keyTimes="${kt(0, 4.35, 5.6, 7.4, DUR)}" keySplines=".4 0 .6 1;.3 0 .4 1;.2 0 .2 1;0 0 1 1" calcMode="spline" dur="${DUR}s" fill="freeze"/>
       <path d="${wave}" fill="${c.accent}"><animateTransform attributeName="transform" type="translate" values="0 0;${-onda} 0" dur="1.1s" repeatCount="indefinite"/></path>
     </g></g>`
+
+  // quando l'inchiostro arriva in cima il contorno si tinge dello stesso blu:
+  // pecchini resta pieno, senza il bordo scuro, come sul sito a parola riempita
+  const tinta = `<animate attributeName="stroke" values="${c.fg};${c.fg};${c.accent};${c.accent}" keyTimes="${kt(0, 6.7, 7.5, DUR)}" dur="${DUR}s" fill="freeze"/>`
+  const pecchini = B.svg.replace(/^<g [^>]*>/, (g) => g + tinta)
 
   // gli zzz di chi dorme: si fermano quando si sveglia e tornano alla fine
   const testaAr = [X + 150 * S, Y + 8]
@@ -151,7 +158,7 @@ export function testa(nome) {
 
   const body = `<rect x=".5" y=".5" width="${W - 1}" height="${H - 1}" rx="28" fill="${c.bg}" stroke="${c.line}"/>
   ${out.join('')}
-  <g class="nome">${A.svg}${inchiostro}${B.svg}</g>
+  <g class="nome">${A.svg}${inchiostro}${pecchini}</g>
   <g class="ar">${getto}${gocce}${ar.svg}<g class="zz">${zzz}</g></g>
   <g class="titolo">${T1.svg}${T2.svg}${T3.svg}</g>`
 
