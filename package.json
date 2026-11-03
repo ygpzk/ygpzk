@@ -1,0 +1,20 @@
+{
+  "name": "ygpzk",
+  "private": true,
+  "type": "module",
+  "description": "Il profilo GitHub di Alberto Pecchini: il README e le immagini si rifanno da soli",
+  "scripts": {
+    "genera": "node profilo/genera.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@fontsource-variable/archivo": "^5.3.0",
+    "@fontsource-variable/fraunces": "^5.3.0",
+    "@fontsource-variable/geist-mono": "^5.3.0",
+    "@fontsource-variable/hanken-grotesk": "^5.3.0",
+    "fontkit": "^2.0.4",
+    "wawoff2": "^2.0.1"
+  }
+}

@@ -1,0 +1,45 @@
+# Rifà il README e le immagini del profilo (profilo/genera.mjs). Ogni 15 minuti,
+# a mano dalla scheda Actions, e quando cambia il generatore o il README. Se non
+# è cambiato niente non c'è niente da committare.
+name: profilo
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['profilo/**', 'package*.json', 'README.md', '.github/workflows/profilo.yml']
+
+permissions:
+  contents: write
+
+# un giro alla volta, anche con «grafici»: tutti e due committano su main
+concurrency:
+  group: profilo
+  cancel-in-progress: false
+
+jobs:
+  rifai:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0 # genera.mjs chiede a git in che commit è cambiato l'hero
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: node profilo/genera.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A README.md immagini
+          if git diff --cached --quiet; then echo 'niente di nuovo'; exit 0; fi
+          git commit -m 'profilo: rifatto da solo'
+          git pull --rebase
+          git push

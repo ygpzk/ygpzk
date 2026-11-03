@@ -1,0 +1,45 @@
+# I due grafici che arrivano da fuori, gratis, nei colori di albertopecchini.it:
+# il calendario dei contributi in 3D (yoshi389111/github-profile-3d-contrib, con
+# profilo/3d.json) e il serpente che se lo mangia (Platane/snk). Ogni notte.
+name: grafici
+
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['profilo/3d.json', '.github/workflows/grafici.yml']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profilo
+  cancel-in-progress: false
+
+jobs:
+  disegna:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: yoshi389111/github-profile-3d-contrib@v0.9.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: profilo/3d.json
+      - uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            immagini/serpente-chiaro.svg?color_snake=#007acc&color_dots=#ebe6d8,#cfe6f8,#8cc3ec,#3b9ee8,#005c9e
+            immagini/serpente-scuro.svg?color_snake=#3b9ee8&color_dots=#1c1c1b,#12324a,#0f5a92,#2a8ad0,#7cc0f5
+      - name: Commit
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A profile-3d-contrib immagini/serpente-*.svg
+          if git diff --cached --quiet; then echo 'niente di nuovo'; exit 0; fi
+          git commit -m 'profilo: grafici di stanotte'
+          git pull --rebase
+          git push

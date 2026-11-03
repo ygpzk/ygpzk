@@ -1,0 +1,26 @@
+[
+  {
+    "type": "normal",
+    "fileName": "3d-chiaro.svg",
+    "backgroundColor": "#f8f6f0",
+    "foregroundColor": "#1a1b1a",
+    "strongColor": "#007acc",
+    "weakColor": "#525252",
+    "radarColor": "#007acc",
+    "growingAnimation": true,
+    "contribColors": ["#ebe6d8", "#cfe6f8", "#8cc3ec", "#3b9ee8", "#005c9e"],
+    "l10n": { "commit": "commit", "repo": "repository", "review": "revisioni", "pullreq": "pull request", "issue": "issue", "contrib": "contributi" }
+  },
+  {
+    "type": "normal",
+    "fileName": "3d-scuro.svg",
+    "backgroundColor": "#0a0a0a",
+    "foregroundColor": "#f8f6f0",
+    "strongColor": "#3b9ee8",
+    "weakColor": "#a3a3a3",
+    "radarColor": "#3b9ee8",
+    "growingAnimation": true,
+    "contribColors": ["#1c1c1b", "#12324a", "#0f5a92", "#2a8ad0", "#7cc0f5"],
+    "l10n": { "commit": "commit", "repo": "repository", "review": "revisioni", "pullreq": "pull request", "issue": "issue", "contrib": "contributi" }
+  }
+]
