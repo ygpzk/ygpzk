@@ -34,7 +34,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- commit:inizio -->
 ### ①&nbsp; nello zero i tasti dicono il vero e chi arriva capisce
 
-✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `main` · 4 nov 2026, 02:51 · [`fc1e92c`](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
+✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:51 · [`fc1e92c`](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
 
 Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi diversi da quel che hanno di nome… fai una cosa più facile, uno che non ha mai aperto il sito fa fatica a usare il flipper».
 
@@ -60,7 +60,7 @@ Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi dive
 
 ### ②&nbsp; nel README i .woff2 di Allianz Neo come si trovano nella cartella firma
 
-📝 **documenti** in `esperimenti` · [AP](https://github.com/ygpzk/AP) su `main` · 4 nov 2026, 02:27 · [`993f5d7`](https://github.com/ygpzk/AP/commit/993f5d70b5c4f4d81e5ff366d37a0cad7aee1905)
+📝 **documenti** in `esperimenti` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:27 · [`993f5d7`](https://github.com/ygpzk/AP/commit/993f5d70b5c4f4d81e5ff366d37a0cad7aee1905)
 
 > **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+9</b> in più, <b>−4</b> in meno
 
