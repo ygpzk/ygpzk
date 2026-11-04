@@ -32,41 +32,41 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; le versioni di oggi di albertopecchini.it e pzkko.it
+### ①&nbsp; nello zero i tasti dicono il vero e chi arriva capisce
 
-🧹 **manutenzione** in `tempo` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 3 nov 2026, 23:53 · [`ad4fba1`](https://github.com/ygpzk/AP/commit/ad4fba1e6570af2650c4688da2525eedec9b7ae6)
+✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:51 · [`fc1e92c`](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
 
-Ricostruite, fotografate e congelate in istantanea dopo 85b7b32 (albertopecchini.it) e 733905a (pzkko.it); via le foto della versione di oggi di prima.
+Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi diversi da quel che hanno di nome… fai una cosa più facile, uno che non ha mai aperto il sito fa fatica a usare il flipper».
 
-> **i file:** <b>4</b> modificati + <b>7</b> aggiunti + <b>2</b> spostati − <b>4</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+4</b> in più, <b>−4</b> in meno
+> **i file:** <b>17</b> modificati &nbsp;·&nbsp; **le righe:** <b>+900</b> in più, <b>−629</b> in meno
 
 ```diff
 @@ albertopecchini.it/ @@
-! public/tempo/albertopecchini.it/2026-11-03/pagina/index.html  +1 −1
-! public/tempo/pzkko.it/2026-11-03/pagina/index.html  +1 −1
-! src/data/tempo/ap.js  +1 −1
-! src/data/tempo/pzkko.js  +1 −1
-+ public/media/tempo/ap/85b7b32-m.webp
-+ public/media/tempo/pzkko/733905a-d.webp
-+ public/media/tempo/pzkko/733905a-m.webp
-+ public/media/tempo/pzkko/733905a-t.webp
-+ public/media/tempo/risorse/749cc0383805ca10.webp
-+ public/media/tempo/risorse/7936a1f1a0bfb0c8.webp
-+ public/media/tempo/risorse/db6b801e0d5a7ca2.webp
-! public/media/tempo/ap/7afe6e5-d.webp → 85b7b32-d.webp
-! public/media/tempo/ap/7afe6e5-t.webp → 85b7b32-t.webp
-# … e altre 4 righe come queste
+! pzkko/README.md  +31 −0
+! pzkko/chat/comandi/eventi.js  +3 −1
+! pzkko/chat/comandi/soldi.js  +8 −3
+! pzkko/telefono/zero/os/REGOLE.md  +10 −0
+! pzkko/telefono/zero/os/chat.js  +199 −94
+! pzkko/telefono/zero/os/os.js  +78 −16
+! pzkko/telefono/zero/zero.js  +3 −1
+! pzkko/wiki/cronologia.js  +4 −4
+! pzkko/wiki/stato.json  +4 −4
+! pzkko/wiki/img/  (4 file modificati)
+! pzkko/wiki/voci/cercapersone.js  +43 −25
+! pzkko/wiki/voci/chat.js  +9 −5
+! pzkko/wiki/voci/dati.js  +467 −467
+! tools/pzkko/zero/prova.mjs  +41 −9
 ```
 
-### ②&nbsp; la fine stimata del giro resta «—» finché non c'è una media
+### ②&nbsp; nel README i .woff2 di Allianz Neo come si trovano nella cartella firma
 
-🔧 **riparazione** in `cruscotto` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 3 nov 2026, 23:52 · [`85b7b32`](https://github.com/ygpzk/AP/commit/85b7b32b4af4cb99b82b82d8d3f739b3e68d70cf)
+📝 **documenti** in `esperimenti` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:27 · [`993f5d7`](https://github.com/ygpzk/AP/commit/993f5d70b5c4f4d81e5ff366d37a0cad7aee1905)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+2</b> in più, <b>−1</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+9</b> in più, <b>−4</b> in meno
 
 ```diff
-@@ albertopecchini.it/tools/cruscotto/ @@
-! vista.mjs  +2 −1
+@@ esperimenti/preventivo-allianz-mirtilli/ @@
+! README.md  +9 −4
 ```
 <!-- commit:fine -->
 
@@ -75,14 +75,14 @@ Ricostruite, fotografate e congelate in istantanea dopo 85b7b32 (albertopecchini
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 42 commit, soprattutto su `tempo` (14), `pzkko` (14), `albertopecchini.it` (6), `rivaltasulmincio` (5).
+**negli ultimi 7 giorni** 48 commit, soprattutto su `pzkko` (15), `tempo` (14), `albertopecchini.it` (6), `esperimenti` (5).
 
+- **4 nov** · **pzkko** — nello zero i tasti dicono il vero e chi arriva capisce · [AP↗](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
+- **4 nov** · **esperimenti** — il preventivo dei mirtilli in PDF, con Allianz Neo incorporato · [AP↗](https://github.com/ygpzk/AP/commit/bd16ee3044dd4f38c20a94d774be2b13509f9416)
+- **4 nov** · **esperimenti** — finto preventivo Allianz per i mirtilli da collezione · [AP↗](https://github.com/ygpzk/AP/commit/7df23bc7d0759e5fe8b074b5d16e5ca51adf51ee)
 - **3 nov** · **cruscotto** — la regia vede tutte le sessioni di Claude, ognuna col suo stato · [AP↗](https://github.com/ygpzk/AP/commit/733905a92c4bdbce1209e17f12cac8ac8e35d6ad)
 - **3 nov** · **tempo** — l'HTML vero di ogni giorno in un index leggero, e la regia di Claude per ogni lavoro · [AP↗](https://github.com/ygpzk/AP/commit/7afe6e5818208afe5800bda7cd81db7b285b91c7)
 - **3 nov** · **tempo** — una pagina leggera per ogni cattura, con l'indirizzo suo · [AP↗](https://github.com/ygpzk/AP/commit/a1574d7ed1d6645a9484287f7847cfe58cf1f9b0)
-- **3 nov** · **tempo** — la macchina del tempo di cinque siti, col selettore, le statistiche e i momenti · [AP↗](https://github.com/ygpzk/AP/commit/13ff3ecc49249c83c581284f80fedeac0fb8947b)
-- **3 nov** · **mascotte** — torna la tartaruga col casco al posto della nutria · [AP↗](https://github.com/ygpzk/AP/commit/7d62c466a90d67254da1cb94330f6e4bed70aacc)
-- **3 nov** · **tempo** — tutte le 108 versioni, a pagina intera · [AP↗](https://github.com/ygpzk/AP/commit/ca111d9d2002a7b88a8875ab5b9077bd8bc1ac26)
 <!-- novita:fine -->
 
 <br>
@@ -92,11 +92,11 @@ Ricostruite, fotografate e congelate in istantanea dopo 85b7b32 (albertopecchini
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 3 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 4 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 9 ott 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 3 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 4 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -104,7 +104,7 @@ Ricostruite, fotografate e congelate in istantanea dopo 85b7b32 (albertopecchini
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=f5904b4c"><img src="immagini/numeri-chiaro.svg?v=c772fffc" alt="i numeri: 1626 contributi, 4 giorni di fila, 53 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=b3a5bdca"><img src="immagini/numeri-chiaro.svg?v=056f3d16" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -135,7 +135,7 @@ Ricostruite, fotografate e congelate in istantanea dopo 85b7b32 (albertopecchini
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/ad4fba1e6570af2650c4688da2525eedec9b7ae6"><code>ad4fba1</code></a> del 3 nov 2026, 23:53 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc"><code>fc1e92c</code></a> del 4 nov 2026, 02:51 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
