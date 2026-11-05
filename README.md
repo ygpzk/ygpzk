@@ -32,9 +32,25 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; il generatore di email tiene i suoi dati con sé, e torna il modello per email:new
+### ①&nbsp; il file di verifica del dominio per Discord in /.well-known/discord
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 20:38 · [`46a4315`](https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6)
+✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `main` · 5 nov 2026, 03:25 · [`7032f2e`](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
+
+> **i file:** <b>5</b> modificati + <b>1</b> aggiunto &nbsp;·&nbsp; **le righe:** <b>+472</b> in più, <b>−467</b> in meno
+
+```diff
+@@ albertopecchini.it/pzkko/ @@
+! vercel.json  +4 −0
+! wiki/cronologia.js  +4 −4
+! wiki/stato.json  +3 −3
+! wiki/voci/dati.js  +459 −459
+! wiki/voci/dietro.js  +1 −1
++ .well-known/discord  +1 −0
+```
+
+### ②&nbsp; il generatore di email tiene i suoi dati con sé, e torna il modello per email:new
+
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 4 nov 2026, 20:38 · [`46a4315`](https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6)
 
 config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/email-generator/ (tutti i percorsi passano da src/paths.js). EMAIL\_INPUT\_TEMPLATE.md, cancellato per sbaglio il 26.9 (54d8bf5), torna accanto al generatore: npm run email:new funziona di nuovo. Via auto-render.min.js di KaTeX, mai caricato.
 
@@ -57,28 +73,6 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 ! profiles/footers.json → footers.json
 # … e altre 2 righe come queste
 ```
-
-### ②&nbsp; riordino del repo — via PRODUCT.md, DESIGN.md e .impeccable, CLAUDE.md più corto
-
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 20:30 · [`4e41929`](https://github.com/ygpzk/AP/commit/4e419299df7ba3715bf4eea44c29dbdbfd0915d7)
-
-PRODUCT.md e DESIGN.md erano fermi a metà ottobre (la wiki stessa lo diceva): restano nella storia git. La wiki racconta il riordino e non li cita più fra le fonti.
-
-> **i file:** <b>8</b> modificati − <b>6</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+42</b> in più, <b>−1187</b> in meno
-
-```diff
-! .gitignore  +1 −5
-! CLAUDE.md  +11 −34
-! albertopecchini.it/pzkko/wiki/cronologia.js  +3 −3
-! albertopecchini.it/pzkko/wiki/stato.json  +3 −3
-! albertopecchini.it/pzkko/wiki/voci/  (4 file modificati)
-- .impeccable/config.json  +0 −62
-- .impeccable/design.json  +0 −588
-- .impeccable/surfaces/albertopecchini-it-pzkko-index-html.md  +0 −34
-- .impeccable/surfaces/albertopecchini-it-src-templates-pages-pzkko-js.md  +0 −36
-- DESIGN.md  +0 −314
-- PRODUCT.md  +0 −86
-```
 <!-- commit:fine -->
 
 <br>
@@ -86,14 +80,14 @@ PRODUCT.md e DESIGN.md erano fermi a metà ottobre (la wiki stessa lo diceva): r
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 54 commit, soprattutto su `tempo` (14), `pzkko` (12), `albertopecchini.it` (6), `esperimenti` (5).
+**negli ultimi 7 giorni** 53 commit, soprattutto su `tempo` (14), `pzkko` (11), `albertopecchini.it` (6), `esperimenti` (5).
 
+- **5 nov** · **pzkko** — il file di verifica del dominio per Discord in /.well-known/discord · [AP↗](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
 - **4 nov** · **lezioni** — la barra sta sul bordo destro del 24" ed esce dalla cattura · [AP↗](https://github.com/ygpzk/AP/commit/1f9a29281212c1dc9c593a056287a425e631551b)
 - **4 nov** · **lezioni** — si registra sempre e solo lo schermo di Opera GX, e la barra parte aperta · [AP↗](https://github.com/ygpzk/AP/commit/3b6af0dcdd2f41c413aca419340b80e797fcc19a)
 - **4 nov** · **pzkko** — nello zero i tasti dicono il vero e chi arriva capisce · [AP↗](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
 - **4 nov** · **esperimenti** — il preventivo dei mirtilli in PDF, con Allianz Neo incorporato · [AP↗](https://github.com/ygpzk/AP/commit/bd16ee3044dd4f38c20a94d774be2b13509f9416)
 - **4 nov** · **esperimenti** — finto preventivo Allianz per i mirtilli da collezione · [AP↗](https://github.com/ygpzk/AP/commit/7df23bc7d0759e5fe8b074b5d16e5ca51adf51ee)
-- **3 nov** · **cruscotto** — la regia vede tutte le sessioni di Claude, ognuna col suo stato · [AP↗](https://github.com/ygpzk/AP/commit/733905a92c4bdbce1209e17f12cac8ac8e35d6ad)
 <!-- novita:fine -->
 
 <br>
@@ -103,11 +97,11 @@ PRODUCT.md e DESIGN.md erano fermi a metà ottobre (la wiki stessa lo diceva): r
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 4 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 5 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 9 ott 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 4 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 5 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -146,7 +140,7 @@ PRODUCT.md e DESIGN.md erano fermi a metà ottobre (la wiki stessa lo diceva): r
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6"><code>46a4315</code></a> del 4 nov 2026, 20:38 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c"><code>7032f2e</code></a> del 5 nov 2026, 03:25 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
