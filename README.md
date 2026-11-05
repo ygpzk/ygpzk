@@ -80,7 +80,7 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 53 commit, soprattutto su `tempo` (14), `pzkko` (11), `albertopecchini.it` (6), `esperimenti` (5).
+**negli ultimi 7 giorni** 52 commit, soprattutto su `tempo` (14), `pzkko` (11), `esperimenti` (5), `rivaltasulmincio` (5).
 
 - **5 nov** · **pzkko** — il file di verifica del dominio per Discord in /.well-known/discord · [AP↗](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
 - **4 nov** · **lezioni** — la barra sta sul bordo destro del 24" ed esce dalla cattura · [AP↗](https://github.com/ygpzk/AP/commit/1f9a29281212c1dc9c593a056287a425e631551b)
