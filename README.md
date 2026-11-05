@@ -32,41 +32,52 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; nello zero i tasti dicono il vero e chi arriva capisce
+### ①&nbsp; il generatore di email tiene i suoi dati con sé, e torna il modello per email:new
 
-✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:51 · [`fc1e92c`](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 20:38 · [`46a4315`](https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6)
 
-Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi diversi da quel che hanno di nome… fai una cosa più facile, uno che non ha mai aperto il sito fa fatica a usare il flipper».
+config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/email-generator/ (tutti i percorsi passano da src/paths.js). EMAIL\_INPUT\_TEMPLATE.md, cancellato per sbaglio il 26.9 (54d8bf5), torna accanto al generatore: npm run email:new funziona di nuovo. Via auto-render.min.js di KaTeX, mai caricato.
 
-> **i file:** <b>17</b> modificati &nbsp;·&nbsp; **le righe:** <b>+900</b> in più, <b>−629</b> in meno
+> **i file:** <b>8</b> modificati + <b>1</b> aggiunto + <b>5</b> spostati − <b>1</b> rimosso &nbsp;·&nbsp; **le righe:** <b>+248</b> in più, <b>−40</b> in meno
 
 ```diff
 @@ albertopecchini.it/ @@
-! pzkko/README.md  +31 −0
-! pzkko/chat/comandi/eventi.js  +3 −1
-! pzkko/chat/comandi/soldi.js  +8 −3
-! pzkko/telefono/zero/os/REGOLE.md  +10 −0
-! pzkko/telefono/zero/os/chat.js  +199 −94
-! pzkko/telefono/zero/os/os.js  +78 −16
-! pzkko/telefono/zero/zero.js  +3 −1
-! pzkko/wiki/cronologia.js  +4 −4
-! pzkko/wiki/stato.json  +4 −4
-! pzkko/wiki/img/  (4 file modificati)
-! pzkko/wiki/voci/cercapersone.js  +43 −25
-! pzkko/wiki/voci/chat.js  +9 −5
-! pzkko/wiki/voci/dati.js  +467 −467
-! tools/pzkko/zero/prova.mjs  +41 −9
+! .gitignore  +3 −3
+! README.md  +8 −11
+! pzkko/wiki/cronologia.js  +3 −3
+! pzkko/wiki/stato.json  +3 −3
+! pzkko/wiki/voci/dati.js  +3 −3
+! pzkko/wiki/voci/dietro.js  +4 −2
+! tools/email-generator/README.md  +1 −1
+! tools/email-generator/src/paths.js  +15 −13
++ tools/email-generator/EMAIL_INPUT_TEMPLATE.md  +208 −0
+! config/sender-profiles.json → sender-profiles.json
+! emails/attachments/Orario-I-semestre-2026-27.pdf → Orario-I-semestre-2026-27.pdf
+! emails/in/2026-10-20-curtatone-controviale-toscani.md → 2026-10-20-curtatone-controviale-toscani.md
+! profiles/footers.json → footers.json
+# … e altre 2 righe come queste
 ```
 
-### ②&nbsp; nel README i .woff2 di Allianz Neo come si trovano nella cartella firma
+### ②&nbsp; riordino del repo — via PRODUCT.md, DESIGN.md e .impeccable, CLAUDE.md più corto
 
-📝 **documenti** in `esperimenti` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 02:27 · [`993f5d7`](https://github.com/ygpzk/AP/commit/993f5d70b5c4f4d81e5ff366d37a0cad7aee1905)
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 4 nov 2026, 20:30 · [`4e41929`](https://github.com/ygpzk/AP/commit/4e419299df7ba3715bf4eea44c29dbdbfd0915d7)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+9</b> in più, <b>−4</b> in meno
+PRODUCT.md e DESIGN.md erano fermi a metà ottobre (la wiki stessa lo diceva): restano nella storia git. La wiki racconta il riordino e non li cita più fra le fonti.
+
+> **i file:** <b>8</b> modificati − <b>6</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+42</b> in più, <b>−1187</b> in meno
 
 ```diff
-@@ esperimenti/preventivo-allianz-mirtilli/ @@
-! README.md  +9 −4
+! .gitignore  +1 −5
+! CLAUDE.md  +11 −34
+! albertopecchini.it/pzkko/wiki/cronologia.js  +3 −3
+! albertopecchini.it/pzkko/wiki/stato.json  +3 −3
+! albertopecchini.it/pzkko/wiki/voci/  (4 file modificati)
+- .impeccable/config.json  +0 −62
+- .impeccable/design.json  +0 −588
+- .impeccable/surfaces/albertopecchini-it-pzkko-index-html.md  +0 −34
+- .impeccable/surfaces/albertopecchini-it-src-templates-pages-pzkko-js.md  +0 −36
+- DESIGN.md  +0 −314
+- PRODUCT.md  +0 −86
 ```
 <!-- commit:fine -->
 
@@ -75,14 +86,14 @@ Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi dive
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 52 commit, soprattutto su `pzkko` (15), `tempo` (14), `albertopecchini.it` (6), `esperimenti` (5).
+**negli ultimi 7 giorni** 54 commit, soprattutto su `tempo` (14), `pzkko` (12), `albertopecchini.it` (6), `esperimenti` (5).
 
+- **4 nov** · **lezioni** — la barra sta sul bordo destro del 24" ed esce dalla cattura · [AP↗](https://github.com/ygpzk/AP/commit/1f9a29281212c1dc9c593a056287a425e631551b)
+- **4 nov** · **lezioni** — si registra sempre e solo lo schermo di Opera GX, e la barra parte aperta · [AP↗](https://github.com/ygpzk/AP/commit/3b6af0dcdd2f41c413aca419340b80e797fcc19a)
 - **4 nov** · **pzkko** — nello zero i tasti dicono il vero e chi arriva capisce · [AP↗](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
 - **4 nov** · **esperimenti** — il preventivo dei mirtilli in PDF, con Allianz Neo incorporato · [AP↗](https://github.com/ygpzk/AP/commit/bd16ee3044dd4f38c20a94d774be2b13509f9416)
 - **4 nov** · **esperimenti** — finto preventivo Allianz per i mirtilli da collezione · [AP↗](https://github.com/ygpzk/AP/commit/7df23bc7d0759e5fe8b074b5d16e5ca51adf51ee)
 - **3 nov** · **cruscotto** — la regia vede tutte le sessioni di Claude, ognuna col suo stato · [AP↗](https://github.com/ygpzk/AP/commit/733905a92c4bdbce1209e17f12cac8ac8e35d6ad)
-- **3 nov** · **tempo** — l'HTML vero di ogni giorno in un index leggero, e la regia di Claude per ogni lavoro · [AP↗](https://github.com/ygpzk/AP/commit/7afe6e5818208afe5800bda7cd81db7b285b91c7)
-- **3 nov** · **tempo** — una pagina leggera per ogni cattura, con l'indirizzo suo · [AP↗](https://github.com/ygpzk/AP/commit/a1574d7ed1d6645a9484287f7847cfe58cf1f9b0)
 <!-- novita:fine -->
 
 <br>
@@ -104,7 +115,7 @@ Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi dive
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=b3a5bdca"><img src="immagini/numeri-chiaro.svg?v=056f3d16" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=7f065d87"><img src="immagini/numeri-chiaro.svg?v=999bcbb2" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -135,7 +146,7 @@ Alberto, 4.11: «in chat è buggato perché i tasti che premo danno comandi dive
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc"><code>fc1e92c</code></a> del 4 nov 2026, 02:51 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6"><code>46a4315</code></a> del 4 nov 2026, 20:38 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
