@@ -32,46 +32,33 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; il file di verifica del dominio per Discord in /.well-known/discord
+### ①&nbsp; pzkkopedia allineata al biglietto dell'ospite (d6ff9ab)
 
-✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `main` · 5 nov 2026, 03:25 · [`7032f2e`](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
+📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `main` · 6 nov 2026, 12:34 · [`e168cea`](https://github.com/ygpzk/AP/commit/e168cea2b6ee35156ce2d72d1ac8aa8328d481b9)
 
-> **i file:** <b>5</b> modificati + <b>1</b> aggiunto &nbsp;·&nbsp; **le righe:** <b>+472</b> in più, <b>−467</b> in meno
+> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+10</b> in più, <b>−10</b> in meno
 
 ```diff
-@@ albertopecchini.it/pzkko/ @@
-! vercel.json  +4 −0
-! wiki/cronologia.js  +4 −4
-! wiki/stato.json  +3 −3
-! wiki/voci/dati.js  +459 −459
-! wiki/voci/dietro.js  +1 −1
-+ .well-known/discord  +1 −0
+@@ albertopecchini.it/pzkko/wiki/ @@
+! cronologia.js  +3 −3
+! stato.json  +3 −3
+! voci/dati.js  +4 −4
 ```
 
-### ②&nbsp; il generatore di email tiene i suoi dati con sé, e torna il modello per email:new
+### ②&nbsp; l'ospite appena arrivato aspetta il biglietto della banca prima di ogni azione (niente più 401 a ogni visita nuova)
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 4 nov 2026, 20:38 · [`46a4315`](https://github.com/ygpzk/AP/commit/46a431586bdba4cba10b2e3cbffca5d51b2636d6)
+🔧 **riparazione** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `main` · 6 nov 2026, 12:34 · [`d6ff9ab`](https://github.com/ygpzk/AP/commit/d6ff9abbaaea3fe685af7bfedbaec946d84e2d1c)
 
-config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/email-generator/ (tutti i percorsi passano da src/paths.js). EMAIL\_INPUT\_TEMPLATE.md, cancellato per sbaglio il 26.9 (54d8bf5), torna accanto al generatore: npm run email:new funziona di nuovo. Via auto-render.min.js di KaTeX, mai caricato.
+Trovato dal bot dei bug sul sito vero: chi arriva senza conto faceva partire sfide.oggi e virtual.palinsesto con «ospite: null» prima che la banca gli desse il biglietto, e /api/wallet/ rispondeva 401 «entra di nuovo». In games/pzk.js il biglietto si chiede una volta sola (primoBiglietto) e ogni fai lo aspetta; se…
 
-> **i file:** <b>8</b> modificati + <b>1</b> aggiunto + <b>5</b> spostati − <b>1</b> rimosso &nbsp;·&nbsp; **le righe:** <b>+248</b> in più, <b>−40</b> in meno
+> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+21</b> in più, <b>−6</b> in meno
 
 ```diff
 @@ albertopecchini.it/ @@
-! .gitignore  +3 −3
-! README.md  +8 −11
-! pzkko/wiki/cronologia.js  +3 −3
-! pzkko/wiki/stato.json  +3 −3
-! pzkko/wiki/voci/dati.js  +3 −3
-! pzkko/wiki/voci/dietro.js  +4 −2
-! tools/email-generator/README.md  +1 −1
-! tools/email-generator/src/paths.js  +15 −13
-+ tools/email-generator/EMAIL_INPUT_TEMPLATE.md  +208 −0
-! config/sender-profiles.json → sender-profiles.json
-! emails/attachments/Orario-I-semestre-2026-27.pdf → Orario-I-semestre-2026-27.pdf
-! emails/in/2026-10-20-curtatone-controviale-toscani.md → 2026-10-20-curtatone-controviale-toscani.md
-! profiles/footers.json → footers.json
-# … e altre 2 righe come queste
+! pzkko/chat/sfide.js  +0 −3
+! pzkko/games/pzk.js  +14 −1
+! pzkko/wiki/voci/dietro.js  +1 −1
+! tools/pzkko/bot/bot.mjs  +6 −1
 ```
 <!-- commit:fine -->
 
@@ -80,14 +67,14 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 52 commit, soprattutto su `tempo` (14), `pzkko` (11), `esperimenti` (5), `rivaltasulmincio` (5).
+**negli ultimi 7 giorni** 62 commit, soprattutto su `pzkko` (14), `tempo` (14), `wiki` (5), `esperimenti` (5).
 
+- **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/541f48c30f3af574ade064e9d6b7e631dd1f0b91)
+- **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/99f4342423d67aa70a54b1a8b0ab31369e4a6af4)
+- **6 nov** · **pzkko** — il cartello della manutenzione sul muro della stazione di Monaco, e il sito chiuso fino a domenica alle 14 · [AP↗](https://github.com/ygpzk/AP/commit/7d95b08b368dfa2b692aa79267988a43db1db987)
 - **5 nov** · **pzkko** — il file di verifica del dominio per Discord in /.well-known/discord · [AP↗](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
 - **4 nov** · **lezioni** — la barra sta sul bordo destro del 24" ed esce dalla cattura · [AP↗](https://github.com/ygpzk/AP/commit/1f9a29281212c1dc9c593a056287a425e631551b)
 - **4 nov** · **lezioni** — si registra sempre e solo lo schermo di Opera GX, e la barra parte aperta · [AP↗](https://github.com/ygpzk/AP/commit/3b6af0dcdd2f41c413aca419340b80e797fcc19a)
-- **4 nov** · **pzkko** — nello zero i tasti dicono il vero e chi arriva capisce · [AP↗](https://github.com/ygpzk/AP/commit/fc1e92c9038f6e71c276df3e2653327e49240edc)
-- **4 nov** · **esperimenti** — il preventivo dei mirtilli in PDF, con Allianz Neo incorporato · [AP↗](https://github.com/ygpzk/AP/commit/bd16ee3044dd4f38c20a94d774be2b13509f9416)
-- **4 nov** · **esperimenti** — finto preventivo Allianz per i mirtilli da collezione · [AP↗](https://github.com/ygpzk/AP/commit/7df23bc7d0759e5fe8b074b5d16e5ca51adf51ee)
 <!-- novita:fine -->
 
 <br>
@@ -97,7 +84,7 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 5 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 6 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 9 ott 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
@@ -109,7 +96,7 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=d6437925"><img src="immagini/numeri-chiaro.svg?v=8acf748b" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=3fadceb8"><img src="immagini/numeri-chiaro.svg?v=dabc57a2" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -140,7 +127,7 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c"><code>7032f2e</code></a> del 5 nov 2026, 03:25 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/e168cea2b6ee35156ce2d72d1ac8aa8328d481b9"><code>e168cea</code></a> del 6 nov 2026, 12:34 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
