@@ -109,7 +109,7 @@ config/, profiles/ ed emails/ escono dalla radice del sito e vanno in tools/emai
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=7f065d87"><img src="immagini/numeri-chiaro.svg?v=999bcbb2" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=d6437925"><img src="immagini/numeri-chiaro.svg?v=8acf748b" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
