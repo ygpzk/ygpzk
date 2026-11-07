@@ -67,7 +67,7 @@ Trovato dal bot dei bug sul sito vero: chi arriva senza conto faceva partire sfi
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 62 commit, soprattutto su `pzkko` (14), `tempo` (14), `wiki` (5), `esperimenti` (5).
+**negli ultimi 7 giorni** 60 commit, soprattutto su `tempo` (14), `pzkko` (12), `wiki` (5), `esperimenti` (5).
 
 - **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/541f48c30f3af574ade064e9d6b7e631dd1f0b91)
 - **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/99f4342423d67aa70a54b1a8b0ab31369e4a6af4)
