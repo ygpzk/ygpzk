@@ -32,55 +32,31 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; la macchinetta delle sigarette sulla serranda e pzkko.it/deutschland, la galleria del viaggio a Monaco e Stoccarda con JMA
+### ①&nbsp; pzkkopedia allineata a Deutschland 2 (9470eb9, 0426e92)
 
-✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 11:23 · [`0a2e5e8`](https://github.com/ygpzk/AP/commit/0a2e5e8ce77528ffc59653688d218c0127f50597)
+📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 21:20 · [`f03a95e`](https://github.com/ygpzk/AP/commit/f03a95e4e362554d455b22e11b3db5f982b5e2ee)
 
-Sul muro, nel primo schermo, un vecchio Zigarettenautomat con lo schermo (le tappe pixelate) e i nostri pacchetti nelle vetrinette; al click la vernice cola giù, nera, e scopre /deutschland/: la macchinetta da vicino chiede la password, controllata a casa dalla banca (scrypt, limiti) che dà un biglietto HMAC per il…
-
-> **i file:** <b>11</b> modificati + <b>59</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+4497</b> in più, <b>−471</b> in meno
+> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−11</b> in meno
 
 ```diff
-@@ albertopecchini.it/ @@
-! .gitignore  +3 −0
-! package-lock.json  +8 −0
-! package.json  +1 −0
-! pzkko/index.html  +9 −0
-! pzkko/wiki/cronologia.js  +4 −4
-! pzkko/wiki/stato.json  +6 −6
-! pzkko/wiki/voci.js  +2 −1
-! pzkko/wiki/voci/dati.js  +460 −460
-! tools/pzkko/bot/bot.mjs  +1 −0
-! tools/pzkko/disposizione.js  +4 −0
-! tools/pzkko/wiki/README.md  +4 −0
-+ api/deutschland.js  +4 −0
-+ pzkko/api/deutschland.mjs  +8 −0
-# … e altre 8 righe come queste
+@@ albertopecchini.it/pzkko/wiki/ @@
+! cronologia.js  +3 −3
+! stato.json  +3 −3
+! voci/dati.js  +5 −5
 ```
 
-### ②&nbsp; la saracinesca alleggerita, solo 2D (6.11)
+### ②&nbsp; la macchinetta grande dell'ingresso con le misure vere (1028×1641) e il rapporto giusto nel CSS
 
-✨ **novità** in `pzkko` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 11:21 · [`39d41eb`](https://github.com/ygpzk/AP/commit/39d41eb219a13a3d69bfb7ef70ca9b1fd81ccb6c)
+🔧 **riparazione** in `deutschland` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 21:20 · [`0426e92`](https://github.com/ygpzk/AP/commit/0426e921e1cde818e84b6b16f7a52d1e8344ec9d)
 
-La home di pzkko.it diventa solo 2D e leggera: restano wallet, cercapersone, i sei volantini dei social rifatti (sparsi a caso col seme, mai coperti oltre il 10%, tre per riga sul telefono) e la petizione in fondo sopra tutto. Via il 3D (anche dalla regia e dallo scontrino, ora 4.1.0 «serranda leggera»), le…
+Con la foto nuova, più alta, il rapporto vecchio (0,713) la faceva uscire dal primo schermo sui monitor bassi.
 
-> **i file:** <b>18</b> modificati + <b>34</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+1537</b> in più, <b>−1958</b> in meno
+> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+3</b> in più, <b>−3</b> in meno
 
 ```diff
-! .claude/skills/serranda/SKILL.md  +57 −50
-! albertopecchini.it/pzkko/  (4 file modificati)
-! albertopecchini.it/pzkko/benvenuto/benvenuto.js  +14 −37
-! albertopecchini.it/pzkko/petizione/petizione.js  +14 −0
-! albertopecchini.it/pzkko/regia/regia.js  +4 −10
-! albertopecchini.it/pzkko/storia/index.html  +226 −408
-! albertopecchini.it/pzkko/wiki/voci/scena.js  +4 −2
-! albertopecchini.it/pzkko/wiki/voci/sito.js  +114 −22
-! albertopecchini.it/tools/pzkko/  (6 file modificati)
-! albertopecchini.it/vercel.json  +4 −0
-+ albertopecchini.it/pzkko/art/leggere/  (8 file aggiunti)
-+ albertopecchini.it/pzkko/art/social/  (6 file aggiunti)
-+ albertopecchini.it/pzkko/fonts/sub/  (17 file aggiunti)
-# … e altre 3 righe come queste
+@@ albertopecchini.it/pzkko/deutschland/ @@
+! deutschland.css  +2 −2
+! index.html  +1 −1
 ```
 <!-- commit:fine -->
 
@@ -89,14 +65,14 @@ La home di pzkko.it diventa solo 2D e leggera: restano wallet, cercapersone, i s
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 60 commit, soprattutto su `tempo` (14), `pzkko` (12), `wiki` (5), `esperimenti` (5).
+**negli ultimi 7 giorni** 58 commit, soprattutto su `tempo` (14), `pzkko` (10), `wiki` (7), `esperimenti` (5).
 
+- **9 nov** · **pzkko** — Deutschland 2, l'album dei ricordi: foto su Backblaze B2, album a righe giustificate, mappa su carta, macchinetta e pacchetti rifatti · [AP↗](https://github.com/ygpzk/AP/commit/9470eb903bc3ed8bf8f878e8cdc56e1b66e0d10e)
+- **9 nov** · **pzkko** — lo schermo della macchinetta con le dodici tappe vere, i posti spezzati riuniti · [AP↗](https://github.com/ygpzk/AP/commit/1f09869d12227a405bda5f9fe02210660d344cf1)
 - **9 nov** · **pzkko** — la macchinetta delle sigarette sulla serranda e pzkko.it/deutschland, la galleria del viaggio a Monaco e Stoccarda con JMA · [AP↗](https://github.com/ygpzk/AP/commit/0a2e5e8ce77528ffc59653688d218c0127f50597)
 - **9 nov** · **pzkko** — la saracinesca alleggerita, solo 2D (6.11) · [AP↗](https://github.com/ygpzk/AP/commit/39d41eb219a13a3d69bfb7ef70ca9b1fd81ccb6c)
 - **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/541f48c30f3af574ade064e9d6b7e631dd1f0b91)
 - **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/99f4342423d67aa70a54b1a8b0ab31369e4a6af4)
-- **6 nov** · **pzkko** — il cartello della manutenzione sul muro della stazione di Monaco, e il sito chiuso fino a domenica alle 14 · [AP↗](https://github.com/ygpzk/AP/commit/7d95b08b368dfa2b692aa79267988a43db1db987)
-- **5 nov** · **pzkko** — il file di verifica del dominio per Discord in /.well-known/discord · [AP↗](https://github.com/ygpzk/AP/commit/7032f2e453acd304cc0027492c5e5af668c9232c)
 <!-- novita:fine -->
 
 <br>
@@ -118,7 +94,7 @@ La home di pzkko.it diventa solo 2D e leggera: restano wallet, cercapersone, i s
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=c705a4f9"><img src="immagini/numeri-chiaro.svg?v=703480f6" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=ad950e09"><img src="immagini/numeri-chiaro.svg?v=877756d5" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -149,7 +125,7 @@ La home di pzkko.it diventa solo 2D e leggera: restano wallet, cercapersone, i s
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/0a2e5e8ce77528ffc59653688d218c0127f50597"><code>0a2e5e8</code></a> del 9 nov 2026, 11:23 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/f03a95e4e362554d455b22e11b3db5f982b5e2ee"><code>f03a95e</code></a> del 9 nov 2026, 21:20 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
