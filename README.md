@@ -32,31 +32,34 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; pzkkopedia allineata a Deutschland 2 (9470eb9, 0426e92)
+### ①&nbsp; pzkkopedia allineata a 51bfa22, la storia di Deutschland e i pacchetti delle persone pieni
 
-📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 21:20 · [`f03a95e`](https://github.com/ygpzk/AP/commit/f03a95e4e362554d455b22e11b3db5f982b5e2ee)
+📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 22:57 · [`74c82a3`](https://github.com/ygpzk/AP/commit/74c82a3a3883c52d8f98ac05d03e006edd53f907)
 
-> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−11</b> in meno
+> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+14</b> in più, <b>−14</b> in meno
 
 ```diff
 @@ albertopecchini.it/pzkko/wiki/ @@
 ! cronologia.js  +3 −3
 ! stato.json  +3 −3
-! voci/dati.js  +5 −5
+! voci/dati.js  +7 −7
+! voci/deutschland.js  +1 −1
 ```
 
-### ②&nbsp; la macchinetta grande dell'ingresso con le misure vere (1028×1641) e il rapporto giusto nel CSS
+### ②&nbsp; i nomi nell'album e la storia di Deutschland nella wiki
 
-🔧 **riparazione** in `deutschland` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 21:20 · [`0426e92`](https://github.com/ygpzk/AP/commit/0426e921e1cde818e84b6b16f7a52d1e8344ec9d)
+✨ **novità** in `deutschland` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 9 nov 2026, 22:56 · [`18971d7`](https://github.com/ygpzk/AP/commit/18971d76151dccdb1fb4b14837664f246d31eb61)
 
-Con la foto nuova, più alta, il rapporto vecchio (0,713) la faceva uscire dal primo schermo sui monitor bassi.
+Alberto la sera: «riavvia la banca» (da allora l'accesso dà cdn b2, anche in produzione) e i nomi dei volti: pekko 1, mikas 2, jonny 3; i gruppi 4, 5, 8 sono Mikas di profilo e il 14 Jonny. Jella, mai trovata dal riconoscimento, sta a mano in catalogo\\tag-mano.json (il tetto della Kolbstraße e il letto).…
 
-> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+3</b> in più, <b>−3</b> in meno
+> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+74</b> in più, <b>−6</b> in meno
 
 ```diff
-@@ albertopecchini.it/pzkko/deutschland/ @@
-! deutschland.css  +2 −2
-! index.html  +1 −1
+@@ albertopecchini.it/ @@
+! pzkko/wiki/voci/deutschland.js  +69 −1
+! tools/pzkko/deutschland/cataloga.mjs  +3 −3
+! tools/pzkko/deutschland/manifesto.mjs  +1 −1
+! tools/pzkko/wiki/README.md  +1 −1
 ```
 <!-- commit:fine -->
 
@@ -65,14 +68,14 @@ Con la foto nuova, più alta, il rapporto vecchio (0,713) la faceva uscire dal p
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 58 commit, soprattutto su `tempo` (14), `pzkko` (10), `wiki` (7), `esperimenti` (5).
+**negli ultimi 7 giorni** 51 commit, soprattutto su `tempo` (12), `pzkko` (10), `wiki` (8), `esperimenti` (5).
 
+- **9 nov** · **deutschland** — i nomi nell'album e la storia di Deutschland nella wiki · [AP↗](https://github.com/ygpzk/AP/commit/18971d76151dccdb1fb4b14837664f246d31eb61)
 - **9 nov** · **pzkko** — Deutschland 2, l'album dei ricordi: foto su Backblaze B2, album a righe giustificate, mappa su carta, macchinetta e pacchetti rifatti · [AP↗](https://github.com/ygpzk/AP/commit/9470eb903bc3ed8bf8f878e8cdc56e1b66e0d10e)
 - **9 nov** · **pzkko** — lo schermo della macchinetta con le dodici tappe vere, i posti spezzati riuniti · [AP↗](https://github.com/ygpzk/AP/commit/1f09869d12227a405bda5f9fe02210660d344cf1)
 - **9 nov** · **pzkko** — la macchinetta delle sigarette sulla serranda e pzkko.it/deutschland, la galleria del viaggio a Monaco e Stoccarda con JMA · [AP↗](https://github.com/ygpzk/AP/commit/0a2e5e8ce77528ffc59653688d218c0127f50597)
 - **9 nov** · **pzkko** — la saracinesca alleggerita, solo 2D (6.11) · [AP↗](https://github.com/ygpzk/AP/commit/39d41eb219a13a3d69bfb7ef70ca9b1fd81ccb6c)
 - **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/541f48c30f3af574ade064e9d6b7e631dd1f0b91)
-- **6 nov** · **tools** — il bot dei bug di pzkko, che gira da solo a ogni push e due volte al giorno sul sito vero · [AP↗](https://github.com/ygpzk/AP/commit/99f4342423d67aa70a54b1a8b0ab31369e4a6af4)
 <!-- novita:fine -->
 
 <br>
@@ -94,7 +97,7 @@ Con la foto nuova, più alta, il rapporto vecchio (0,713) la faceva uscire dal p
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=ad950e09"><img src="immagini/numeri-chiaro.svg?v=877756d5" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=1f6f4df9"><img src="immagini/numeri-chiaro.svg?v=1845f469" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -125,7 +128,7 @@ Con la foto nuova, più alta, il rapporto vecchio (0,713) la faceva uscire dal p
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/f03a95e4e362554d455b22e11b3db5f982b5e2ee"><code>f03a95e</code></a> del 9 nov 2026, 21:20 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/74c82a3a3883c52d8f98ac05d03e006edd53f907"><code>74c82a3</code></a> del 9 nov 2026, 22:57 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
