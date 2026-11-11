@@ -32,31 +32,33 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; il controllo delle pagine salta l'archivio della macchina del tempo
+### ①&nbsp; pzkkopedia allineata, la miniera e il pezzo che non ci sta
 
-📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 10 nov 2026, 22:40 · [`215c71d`](https://github.com/ygpzk/AP/commit/215c71d3b42f8bf52c34088a5cabb73d6a0f6614)
+📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 13:05 · [`732b789`](https://github.com/ygpzk/AP/commit/732b7897afd804c07a167e8f95ce0560d767ef7c)
 
-> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−11</b> in meno
+> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+472</b> in più, <b>−469</b> in meno
 
 ```diff
 @@ albertopecchini.it/pzkko/wiki/ @@
-! cronologia.js  +3 −3
-! stato.json  +3 −3
-! voci/dati.js  +4 −4
-! voci/dietro.js  +1 −1
+! cronologia.js  +4 −4
+! stato.json  +4 −4
+! voci/cercapersone.js  +3 −0
+! voci/dati.js  +461 −461
 ```
 
-### ②&nbsp; non controlla l'archivio della macchina del tempo
+### ②&nbsp; la miniera monta i pezzi comprati, e un agente per app ha corretto 198 errori
 
-🔧 **riparazione** in `controllo` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 10 nov 2026, 22:39 · [`cf57778`](https://github.com/ygpzk/AP/commit/cf5777889c63a11a02ea33969eed9610187b089c)
+🔧 **riparazione** in `pzk os` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 13:05 · [`d195e6e`](https://github.com/ygpzk/AP/commit/d195e6e375819078b6114dd22c67cdbbdf55ad40)
 
-Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei siti di allora (anche di altri siti, con i difetti di quel giorno): facevano fallire la build con 517 problemi che non si possono né si devono correggere.
+- miniera: se il pezzo che hai non ci sta, «monta» resta e dice perché, poi porta al pezzo che lo fa stare (perMontare in chat/miniera.js); avviso prima di comprare un pezzo che non entra; ⚠ nella lista. Il collaudo ha --miniera-cugino (il caso di Alberto). - le 22 app di pzk os: tasti che mentivano, frecce senza…
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+8</b> in più, <b>−1</b> in meno
+> **i file:** <b>24</b> modificati &nbsp;·&nbsp; **le righe:** <b>+879</b> in più, <b>−392</b> in meno
 
 ```diff
-@@ albertopecchini.it/tools/controllo/ @@
-! controllo.mjs  +8 −1
+@@ albertopecchini.it/ @@
+! pzkko/chat/miniera.js  +19 −0
+! pzkko/telefono/zero/os/  (22 file modificati)
+! tools/pzkko/zero/prova.mjs  +6 −0
 ```
 <!-- commit:fine -->
 
@@ -65,7 +67,7 @@ Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei 
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 33 commit, soprattutto su `wiki` (10), `pzkko` (8), `deutschland` (5), `AP` (3).
+**negli ultimi 7 giorni** 36 commit, soprattutto su `wiki` (11), `pzkko` (8), `deutschland` (5), `dariodonelli-` (4).
 
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 - **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
@@ -94,7 +96,7 @@ Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=c4e3bee6"><img src="immagini/numeri-chiaro.svg?v=47f972a1" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=d4578f94"><img src="immagini/numeri-chiaro.svg?v=3ceb3699" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -125,7 +127,7 @@ Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei 
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/215c71d3b42f8bf52c34088a5cabb73d6a0f6614"><code>215c71d</code></a> del 10 nov 2026, 22:40 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/732b7897afd804c07a167e8f95ce0560d767ef7c"><code>732b789</code></a> del 11 nov 2026, 13:05 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
