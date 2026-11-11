@@ -34,7 +34,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- commit:inizio -->
 ### ①&nbsp; il controllo delle pagine salta l'archivio della macchina del tempo
 
-📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `main` · 10 nov 2026, 22:40 · [`215c71d`](https://github.com/ygpzk/AP/commit/215c71d3b42f8bf52c34088a5cabb73d6a0f6614)
+📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 10 nov 2026, 22:40 · [`215c71d`](https://github.com/ygpzk/AP/commit/215c71d3b42f8bf52c34088a5cabb73d6a0f6614)
 
 > **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−11</b> in meno
 
@@ -48,7 +48,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 ### ②&nbsp; non controlla l'archivio della macchina del tempo
 
-🔧 **riparazione** in `controllo` · [AP](https://github.com/ygpzk/AP) su `main` · 10 nov 2026, 22:39 · [`cf57778`](https://github.com/ygpzk/AP/commit/cf5777889c63a11a02ea33969eed9610187b089c)
+🔧 **riparazione** in `controllo` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 10 nov 2026, 22:39 · [`cf57778`](https://github.com/ygpzk/AP/commit/cf5777889c63a11a02ea33969eed9610187b089c)
 
 Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei siti di allora (anche di altri siti, con i difetti di quel giorno): facevano fallire la build con 517 problemi che non si possono né si devono correggere.
 
@@ -65,7 +65,7 @@ Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei 
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 39 commit, soprattutto su `wiki` (10), `pzkko` (9), `deutschland` (5), `esperimenti` (5).
+**negli ultimi 7 giorni** 33 commit, soprattutto su `wiki` (10), `pzkko` (8), `deutschland` (5), `AP` (3).
 
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 - **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
@@ -86,7 +86,7 @@ Le pagine in public/tempo/\<sito\>/\<giorno\>/pagina/ sono l'HTML congelato dei 
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 10 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 10 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 11 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
