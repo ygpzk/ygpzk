@@ -32,7 +32,33 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; pzkkopedia allineata, la miniera e il pezzo che non ci sta
+### ①&nbsp; stato dei sistemi, agenti gratis, cruscotto con account e hosting
+
+✨ **novità** in `pzk os, regia` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 16:52 · [`a3ba291`](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
+
+Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
+
+> **i file:** <b>62</b> modificati + <b>13</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+3947</b> in più, <b>−940</b> in meno
+
+```diff
+@@ albertopecchini.it/ @@
+! pzkko/api/_server.mjs  +17 −2
+! pzkko/barra/pagina.css  +12 −0
+! pzkko/chat/  (4 file modificati)
+! pzkko/gadget/index.html  +3 −1
+! pzkko/games/pzk.js  +18 −5
+! pzkko/info/index.html  +5 −1
+! pzkko/oggetti/index.html  +3 −1
+! pzkko/sitemap.xml  +1 −0
+! pzkko/telefono/app/  (4 file modificati)
+! pzkko/telefono/telefono.js  +28 −0
+! pzkko/telefono/zero/muro.js  +2 −2
+! pzkko/telefono/zero/zero.js  +1 −1
+! pzkko/telefono/zero/os/  (28 file modificati)
+# … e altre 20 righe come queste
+```
+
+### ②&nbsp; pzkkopedia allineata, la miniera e il pezzo che non ci sta
 
 📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 13:05 · [`732b789`](https://github.com/ygpzk/AP/commit/732b7897afd804c07a167e8f95ce0560d767ef7c)
 
@@ -45,21 +71,6 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ! voci/cercapersone.js  +3 −0
 ! voci/dati.js  +461 −461
 ```
-
-### ②&nbsp; la miniera monta i pezzi comprati, e un agente per app ha corretto 198 errori
-
-🔧 **riparazione** in `pzk os` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 13:05 · [`d195e6e`](https://github.com/ygpzk/AP/commit/d195e6e375819078b6114dd22c67cdbbdf55ad40)
-
-- miniera: se il pezzo che hai non ci sta, «monta» resta e dice perché, poi porta al pezzo che lo fa stare (perMontare in chat/miniera.js); avviso prima di comprare un pezzo che non entra; ⚠ nella lista. Il collaudo ha --miniera-cugino (il caso di Alberto). - le 22 app di pzk os: tasti che mentivano, frecce senza…
-
-> **i file:** <b>24</b> modificati &nbsp;·&nbsp; **le righe:** <b>+879</b> in più, <b>−392</b> in meno
-
-```diff
-@@ albertopecchini.it/ @@
-! pzkko/chat/miniera.js  +19 −0
-! pzkko/telefono/zero/os/  (22 file modificati)
-! tools/pzkko/zero/prova.mjs  +6 −0
-```
 <!-- commit:fine -->
 
 <br>
@@ -67,14 +78,14 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 36 commit, soprattutto su `wiki` (11), `pzkko` (8), `deutschland` (5), `dariodonelli-` (4).
+**negli ultimi 7 giorni** 35 commit, soprattutto su `wiki` (11), `pzkko` (8), `deutschland` (5), `dariodonelli-` (4).
 
+- **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 - **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
 - **10 nov** · **deutschland** — Deutschland 3, il tavolo dei ricordi, i tasti veri della macchinetta e i pacchetti che aprono il loro album · [AP↗](https://github.com/ygpzk/AP/commit/c40dae80e1d7122597795165a5614a9d80bece21)
 - **9 nov** · **deutschland** — i nomi nell'album e la storia di Deutschland nella wiki · [AP↗](https://github.com/ygpzk/AP/commit/18971d76151dccdb1fb4b14837664f246d31eb61)
 - **9 nov** · **pzkko** — Deutschland 2, l'album dei ricordi: foto su Backblaze B2, album a righe giustificate, mappa su carta, macchinetta e pacchetti rifatti · [AP↗](https://github.com/ygpzk/AP/commit/9470eb903bc3ed8bf8f878e8cdc56e1b66e0d10e)
-- **9 nov** · **pzkko** — lo schermo della macchinetta con le dodici tappe vere, i posti spezzati riuniti · [AP↗](https://github.com/ygpzk/AP/commit/1f09869d12227a405bda5f9fe02210660d344cf1)
 <!-- novita:fine -->
 
 <br>
@@ -96,7 +107,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=d4578f94"><img src="immagini/numeri-chiaro.svg?v=3ceb3699" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=946f2a3b"><img src="immagini/numeri-chiaro.svg?v=121baeb4" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -127,7 +138,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/732b7897afd804c07a167e8f95ce0560d767ef7c"><code>732b789</code></a> del 11 nov 2026, 13:05 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049"><code>a3ba291</code></a> del 11 nov 2026, 16:52 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
