@@ -109,7 +109,7 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=402c08ff"><img src="immagini/numeri-chiaro.svg?v=64f7bce0" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=6b10128f"><img src="immagini/numeri-chiaro.svg?v=d9959e1f" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
