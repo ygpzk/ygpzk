@@ -32,44 +32,47 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; stato dei sistemi, agenti gratis, cruscotto con account e hosting
+### ①&nbsp; anche il manifesto della home col selfie in bianco e nero
 
-✨ **novità** in `pzk os, regia` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 16:52 · [`a3ba291`](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
+🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 12 nov 2026, 02:53 · [`4aa3892`](https://github.com/ygpzk/AP/commit/4aa3892120473bbd8926df26b289b8090af7ea38)
 
-Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
+La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso selfie di /studio/, tagliato al petto nello stesso formato (ritratto-bn-banner).
 
-> **i file:** <b>62</b> modificati + <b>13</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+3947</b> in più, <b>−940</b> in meno
+> **i file:** <b>6</b> modificati + <b>2</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+17</b> in più, <b>−14</b> in meno
 
 ```diff
 @@ albertopecchini.it/ @@
-! pzkko/api/_server.mjs  +17 −2
-! pzkko/barra/pagina.css  +12 −0
-! pzkko/chat/  (4 file modificati)
-! pzkko/gadget/index.html  +3 −1
-! pzkko/games/pzk.js  +18 −5
-! pzkko/info/index.html  +5 −1
-! pzkko/oggetti/index.html  +3 −1
-! pzkko/sitemap.xml  +1 −0
-! pzkko/telefono/app/  (4 file modificati)
-! pzkko/telefono/telefono.js  +28 −0
-! pzkko/telefono/zero/muro.js  +2 −2
-! pzkko/telefono/zero/zero.js  +1 −1
-! pzkko/telefono/zero/os/  (28 file modificati)
-# … e altre 20 righe come queste
+! pzkko/wiki/cronologia.js  +3 −3
+! pzkko/wiki/stato.json  +3 −3
+! pzkko/wiki/voci/dati.js  +3 −3
+! src/data/studio.js  +6 −4
+! src/templates/pages/home.js  +1 −1
+! tools/privacy.mjs  +1 −0
++ public/media/studio/ritratto-bn-banner-1600.webp
++ public/media/studio/ritratto-bn-banner-900.webp
 ```
 
-### ②&nbsp; pzkkopedia allineata, la miniera e il pezzo che non ci sta
+### ②&nbsp; il ritratto è il selfie in bianco e nero; l'anteprima og senza paese
 
-📝 **documenti** in `wiki` · [AP](https://github.com/ygpzk/AP) su `main` · 11 nov 2026, 13:05 · [`732b789`](https://github.com/ygpzk/AP/commit/732b7897afd804c07a167e8f95ce0560d767ef7c)
+🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 12 nov 2026, 02:14 · [`9ba7c6c`](https://github.com/ygpzk/AP/commit/9ba7c6c7b594ab63e651fecbf54662c2b9e0114c)
 
-> **i file:** <b>4</b> modificati &nbsp;·&nbsp; **le righe:** <b>+472</b> in più, <b>−469</b> in meno
+- ritratto in home e avatar del saluto dal selfie allo specchio di /studio/ (ritratto-bn.webp, ritratto-bn-avatar.webp); la fototessera non va più online - og.png rifatta: in alto a destra non ci sono più il paese e le coordinate
+
+> **i file:** <b>9</b> modificati + <b>2</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+27</b> in più, <b>−30</b> in meno
 
 ```diff
-@@ albertopecchini.it/pzkko/wiki/ @@
-! cronologia.js  +4 −4
-! stato.json  +4 −4
-! voci/cercapersone.js  +3 −0
-! voci/dati.js  +461 −461
+@@ albertopecchini.it/ @@
+! public/og.png
+! pzkko/wiki/cronologia.js  +3 −3
+! pzkko/wiki/stato.json  +4 −4
+! pzkko/wiki/voci/dati.js  +5 −5
+! pzkko/wiki/voci/dietro.js  +1 −1
+! src/data/crediti.js  +1 −1
+! src/data/studio.js  +10 −7
+! tools/og/og.mjs  +2 −9
+! tools/privacy.mjs  +1 −0
++ public/media/studio/ritratto-bn-avatar.webp
++ public/media/studio/ritratto-bn.webp
 ```
 <!-- commit:fine -->
 
@@ -78,7 +81,7 @@ Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 35 commit, soprattutto su `wiki` (11), `pzkko` (8), `deutschland` (5), `dariodonelli-` (4).
+**negli ultimi 7 giorni** 37 commit, soprattutto su `wiki` (11), `pzkko` (7), `deutschland` (5), `dariodonelli-` (4).
 
 - **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
@@ -95,11 +98,10 @@ Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 11 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 12 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 10 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 11 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -107,7 +109,7 @@ Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=946f2a3b"><img src="immagini/numeri-chiaro.svg?v=121baeb4" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=402c08ff"><img src="immagini/numeri-chiaro.svg?v=64f7bce0" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -138,7 +140,7 @@ Aggiornate le voci della pzkkopedia (regia di Claude, agenti gratis).
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049"><code>a3ba291</code></a> del 11 nov 2026, 16:52 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/4aa3892120473bbd8926df26b289b8090af7ea38"><code>4aa3892</code></a> del 12 nov 2026, 02:53 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
