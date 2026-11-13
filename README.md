@@ -32,42 +32,46 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; /live/euro/, il € nero 3D che gira come livello web per Camo
+### ①&nbsp; clean
 
-✨ **novità** in `sito` · [AP](https://github.com/ygpzk/AP) su `main` · 13 nov 2026, 02:55 · [`828930f`](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
+◆ **commit** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:56 · [`13b9a83`](https://github.com/ygpzk/AP/commit/13b9a837b4ec917c5dfdc3a938f80255013de42e)
 
-WebP animata trasparente 640×640, loop di 8 s; ?verde per il fondo verde. Voce nuova in pzkkopedia: «Il € che gira».
-
-> **i file:** <b>4</b> modificati + <b>2</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+512</b> in più, <b>−468</b> in meno
+> **i file:** <b>14</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+0</b> in più, <b>−1431</b> in meno
 
 ```diff
-@@ albertopecchini.it/ @@
-! pzkko/wiki/cronologia.js  +4 −4
-! pzkko/wiki/stato.json  +5 −5
-! pzkko/wiki/voci/dati.js  +459 −459
-! pzkko/wiki/voci/dietro.js  +23 −0
-+ public/live/euro/euro.webp
-+ public/live/euro/index.html  +21 −0
+- .claude/skills/lezione/SKILL.md  +0 −71
+- .claude/skills/nota/SKILL.md  +0 −39
+- .github/workflows/build.yml  +0 −63
+- .github/workflows/catture.yml  +0 −107
+- ./  (4 file rimossi)
+- .vscode/launch.json  +0 −13
+- .vscode/tasks.json  +0 −40
+- esperimenti/preventivo-allianz-mirtilli/  (4 file rimossi)
 ```
 
-### ②&nbsp; anche il manifesto della home col selfie in bianco e nero
+### ②&nbsp; via Better Call Pekko dal repository
 
-🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `main` · 12 nov 2026, 02:53 · [`4aa3892`](https://github.com/ygpzk/AP/commit/4aa3892120473bbd8926df26b289b8090af7ea38)
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
 
-La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso selfie di /studio/, tagliato al petto nello stesso formato (ritratto-bn-banner).
+Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bcp della build), le sue immagini e i suoi strumenti, il database (api/bcp.js e il ponte api/\_server.mjs), il server di sviluppo, la voce nella macchina del tempo, la sezione «Fuori orario: Better Call Saul» di /studio/ (era tutta sua), le…
 
-> **i file:** <b>6</b> modificati + <b>2</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+17</b> in più, <b>−14</b> in meno
+> **i file:** <b>27</b> modificati − <b>226</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+43</b> in più, <b>−6452</b> in meno
 
 ```diff
-@@ albertopecchini.it/ @@
-! pzkko/wiki/cronologia.js  +3 −3
-! pzkko/wiki/stato.json  +3 −3
-! pzkko/wiki/voci/dati.js  +3 −3
-! src/data/studio.js  +6 −4
-! src/templates/pages/home.js  +1 −1
-! tools/privacy.mjs  +1 −0
-+ public/media/studio/ritratto-bn-banner-1600.webp
-+ public/media/studio/ritratto-bn-banner-900.webp
+! .github/workflows/build.yml  +2 −13
+! .vscode/tasks.json  +1 −1
+! albertopecchini.it/  (4 file modificati)
+! albertopecchini.it/.impeccable/config.json  +1 −20
+! albertopecchini.it/api/contatti.js  +0 −23
+! albertopecchini.it/plugins/site-pages.js  +9 −31
+! albertopecchini.it/src/data/  (6 file modificati)
+! albertopecchini.it/src/templates/pages/info.js  +3 −37
+! albertopecchini.it/src/templates/pages/legal.js  +0 −4
+! albertopecchini.it/src/templates/routes.js  +5 −43
+! albertopecchini.it/tools/controllo/README.md  +1 −3
+! albertopecchini.it/tools/controllo/controllo.mjs  +2 −5
+! albertopecchini.it/tools/cruscotto/hosting.mjs  +6 −13
+# … e altre 32 righe come queste
 ```
 <!-- commit:fine -->
 
@@ -76,14 +80,14 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 28 commit, soprattutto su `wiki` (6), `deutschland` (5), `sito` (4), `dariodonelli-` (4).
+**negli ultimi 7 giorni** 33 commit, soprattutto su `wiki` (6), `AP` (5), `pzkko` (5), `deutschland` (5).
 
+- **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
 - **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 - **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
 - **10 nov** · **deutschland** — Deutschland 3, il tavolo dei ricordi, i tasti veri della macchinetta e i pacchetti che aprono il loro album · [AP↗](https://github.com/ygpzk/AP/commit/c40dae80e1d7122597795165a5614a9d80bece21)
-- **9 nov** · **deutschland** — i nomi nell'album e la storia di Deutschland nella wiki · [AP↗](https://github.com/ygpzk/AP/commit/18971d76151dccdb1fb4b14837664f246d31eb61)
 <!-- novita:fine -->
 
 <br>
@@ -94,7 +98,7 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 13 nov 2026 |
-| **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli-](https://github.com/ygpzk/dariodonelli-)</sub> | lo studio di ingegneria di Dario Donelli | 10 nov 2026 |
+| **dariodonelli**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | — | 10 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
 <!-- cantiere:fine -->
@@ -104,7 +108,7 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=530f75a8"><img src="immagini/numeri-chiaro.svg?v=e74fad38" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=057af855"><img src="immagini/numeri-chiaro.svg?v=09d530d3" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -135,7 +139,7 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992"><code>828930f</code></a> del 13 nov 2026, 02:55 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/13b9a837b4ec917c5dfdc3a938f80255013de42e"><code>13b9a83</code></a> del 13 nov 2026, 18:56 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
