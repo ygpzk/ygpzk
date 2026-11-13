@@ -34,7 +34,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- commit:inizio -->
 ### ①&nbsp; /live/euro/, il € nero 3D che gira come livello web per Camo
 
-✨ **novità** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 02:55 · [`828930f`](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
+✨ **novità** in `sito` · [AP](https://github.com/ygpzk/AP) su `main` · 13 nov 2026, 02:55 · [`828930f`](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
 
 WebP animata trasparente 640×640, loop di 8 s; ?verde per il fondo verde. Voce nuova in pzkkopedia: «Il € che gira».
 
@@ -52,7 +52,7 @@ WebP animata trasparente 640×640, loop di 8 s; ?verde per il fondo verde. Voce 
 
 ### ②&nbsp; anche il manifesto della home col selfie in bianco e nero
 
-🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 12 nov 2026, 02:53 · [`4aa3892`](https://github.com/ygpzk/AP/commit/4aa3892120473bbd8926df26b289b8090af7ea38)
+🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `main` · 12 nov 2026, 02:53 · [`4aa3892`](https://github.com/ygpzk/AP/commit/4aa3892120473bbd8926df26b289b8090af7ea38)
 
 La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso selfie di /studio/, tagliato al petto nello stesso formato (ritratto-bn-banner).
 
@@ -76,7 +76,7 @@ La foto a colori con l'iPhone bianco non va più online: al suo posto lo stesso 
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 38 commit, soprattutto su `wiki` (11), `pzkko` (7), `deutschland` (5), `sito` (4).
+**negli ultimi 7 giorni** 28 commit, soprattutto su `wiki` (6), `deutschland` (5), `sito` (4), `dariodonelli-` (4).
 
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
 - **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
