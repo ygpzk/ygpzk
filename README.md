@@ -51,7 +51,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 ### ②&nbsp; via Better Call Pekko dal repository
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
 
 Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bcp della build), le sue immagini e i suoi strumenti, il database (api/bcp.js e il ponte api/\_server.mjs), il server di sviluppo, la voce nella macchina del tempo, la sezione «Fuori orario: Better Call Saul» di /studio/ (era tutta sua), le…
 
@@ -108,7 +108,7 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=057af855"><img src="immagini/numeri-chiaro.svg?v=09d530d3" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=8fd60024"><img src="immagini/numeri-chiaro.svg?v=2a35cd7f" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
