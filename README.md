@@ -108,7 +108,7 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=8fd60024"><img src="immagini/numeri-chiaro.svg?v=2a35cd7f" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=606360e6"><img src="immagini/numeri-chiaro.svg?v=cfd60fab" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
