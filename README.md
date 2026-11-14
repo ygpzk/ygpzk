@@ -51,7 +51,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 ### ②&nbsp; via Better Call Pekko dal repository
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
 
 Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bcp della build), le sue immagini e i suoi strumenti, il database (api/bcp.js e il ponte api/\_server.mjs), il server di sviluppo, la voce nella macchina del tempo, la sezione «Fuori orario: Better Call Saul» di /studio/ (era tutta sua), le…
 
