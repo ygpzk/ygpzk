@@ -32,7 +32,23 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; clean
+### ①&nbsp; via il controllo delle pagine e la regola del credito
+
+🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 16 nov 2026, 01:17 · [`9b53340`](https://github.com/ygpzk/AP/commit/9b53340eb05a01e87b59375e6026b6abc8a8e354)
+
+Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regola del credito con il www non esiste più. Via anche CLAUDE.md, che conteneva solo quella regola.
+
+> **i file:** <b>2</b> modificati − <b>3</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+3</b> in più, <b>−208</b> in meno
+
+```diff
+! .github/workflows/build.yml  +2 −7
+! albertopecchini.it/src/templates/pages/tempo.js  +1 −1
+- CLAUDE.md  +0 −5
+- albertopecchini.it/tools/controllo/README.md  +0 −36
+- albertopecchini.it/tools/controllo/controllo.mjs  +0 −159
+```
+
+### ②&nbsp; clean
 
 ◆ **commit** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:56 · [`13b9a83`](https://github.com/ygpzk/AP/commit/13b9a837b4ec917c5dfdc3a938f80255013de42e)
 
@@ -48,31 +64,6 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 - .vscode/tasks.json  +0 −40
 - esperimenti/preventivo-allianz-mirtilli/  (4 file rimossi)
 ```
-
-### ②&nbsp; via Better Call Pekko dal repository
-
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:27 · [`cfa5d43`](https://github.com/ygpzk/AP/commit/cfa5d43eb4c3644501d3dd657e23d098e0910f05)
-
-Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bcp della build), le sue immagini e i suoi strumenti, il database (api/bcp.js e il ponte api/\_server.mjs), il server di sviluppo, la voce nella macchina del tempo, la sezione «Fuori orario: Better Call Saul» di /studio/ (era tutta sua), le…
-
-> **i file:** <b>27</b> modificati − <b>226</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+43</b> in più, <b>−6452</b> in meno
-
-```diff
-! .github/workflows/build.yml  +2 −13
-! .vscode/tasks.json  +1 −1
-! albertopecchini.it/  (4 file modificati)
-! albertopecchini.it/.impeccable/config.json  +1 −20
-! albertopecchini.it/api/contatti.js  +0 −23
-! albertopecchini.it/plugins/site-pages.js  +9 −31
-! albertopecchini.it/src/data/  (6 file modificati)
-! albertopecchini.it/src/templates/pages/info.js  +3 −37
-! albertopecchini.it/src/templates/pages/legal.js  +0 −4
-! albertopecchini.it/src/templates/routes.js  +5 −43
-! albertopecchini.it/tools/controllo/README.md  +1 −3
-! albertopecchini.it/tools/controllo/controllo.mjs  +2 −5
-! albertopecchini.it/tools/cruscotto/hosting.mjs  +6 −13
-# … e altre 32 righe come queste
-```
 <!-- commit:fine -->
 
 <br>
@@ -80,7 +71,7 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 33 commit, soprattutto su `wiki` (6), `AP` (5), `pzkko` (5), `deutschland` (5).
+**negli ultimi 7 giorni** 34 commit, soprattutto su `AP` (6), `wiki` (6), `pzkko` (5), `deutschland` (5).
 
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
@@ -97,10 +88,11 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 13 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 16 nov 2026 |
 | **dariodonelli**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | — | 10 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 15 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -108,7 +100,7 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=d301a648"><img src="immagini/numeri-chiaro.svg?v=69504e38" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 4 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=f0ef3237"><img src="immagini/numeri-chiaro.svg?v=e7fa77ea" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -139,7 +131,7 @@ Tolti il sito (pagine /assistenza/ e /contatti/assistenza/, la modalità SITE=bc
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/13b9a837b4ec917c5dfdc3a938f80255013de42e"><code>13b9a83</code></a> del 13 nov 2026, 18:56 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/9b53340eb05a01e87b59375e6026b6abc8a8e354"><code>9b53340</code></a> del 16 nov 2026, 01:17 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
