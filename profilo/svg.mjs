@@ -18,9 +18,9 @@ export const TEMI = {
   },
 }
 
-const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)' // --ease-silk
+export const EASE = 'cubic-bezier(0.22, 1, 0.36, 1)' // --ease-silk
 
-const doc = (w, h, title, defs, style, body) =>
+export const doc = (w, h, title, defs, style, body) =>
   `<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" aria-label="${title}"><title>${title}</title><defs>${defs}</defs><style>${style}</style>${body}</svg>\n`
 
 // ── L'hero ──────────────────────────────────────────────────────────────────
@@ -42,7 +42,7 @@ export function testa(nome) {
   const pillY = 124
   const pillH = 40
   const mono = 16
-  const p1 = 'rivalta sul mincio · 45°14′n · 10°41′e'
+  const p1 = 'diplomato geometra · web · grafica'
   const p2 = 'disponibile per nuovi incarichi'
   const w1 = tp.misura('mono', p1, mono) + 36
   const w2 = tp.misura('mono', p2, mono) + 36 + 18
@@ -172,16 +172,17 @@ export function testa(nome) {
 // ── I tasti ─────────────────────────────────────────────────────────────────
 
 /** Una pillola come quelle del sito: piena (blu) o a contorno, con la freccia. */
-export function tasto(nome, testo, { pieno = false } = {}) {
+export function tasto(nome, testo, { pieno = false, piccolo = false } = {}) {
   const c = TEMI[nome]
   const tp = tipografo('k')
-  const size = 19
-  const H = 52
+  const size = piccolo ? 16 : 19
+  const H = piccolo ? 40 : 52
+  const pad = piccolo ? 20 : 26
   const tw = tp.misura('sansForte', testo, size, { tracking: -0.01 })
-  const W = Math.ceil(26 + tw + 14 + 16 + 24)
+  const W = Math.ceil(pad + tw + 14 + 16 + pad - 2)
   const fg = pieno ? c.onAccent : c.fg
-  const t = tp.riga('sansForte', testo, size, { x: 26, y: H / 2 + 6.6, tracking: -0.01, fill: fg })
-  const ax = 26 + tw + 14
+  const t = tp.riga('sansForte', testo, size, { x: pad, y: H / 2 + size * 0.35, tracking: -0.01, fill: fg })
+  const ax = pad + tw + 14
   const freccia = `<path d="M${ax} ${H / 2}h15M${ax + 9} ${H / 2 - 6}l6 6-6 6" fill="none" stroke="${fg}" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>`
   const fondo = pieno
     ? `<rect width="${W}" height="${H}" rx="${H / 2}" fill="${c.accent}"/>`
@@ -199,7 +200,7 @@ const LINGUE = {
 }
 
 const it = (n) => n.toLocaleString('it-IT')
-const giorno = (iso) => {
+export const giorno = (iso) => {
   const [y, m, d] = iso.split('-').map(Number)
   return `${d}.${m}.${y}`
 }

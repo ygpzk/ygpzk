@@ -21,6 +21,8 @@ const SPEC = {
   sans: { file: file('hanken-grotesk', 'hanken-grotesk-latin-wght-normal.woff2'), axes: { wght: 420 } },
   sansForte: { file: file('hanken-grotesk', 'hanken-grotesk-latin-wght-normal.woff2'), axes: { wght: 560 } },
   mono: { file: file('geist-mono', 'geist-mono-latin-wght-normal.woff2'), axes: { wght: 400 } },
+  // il nome di pzkko com’è su Discord: un bastone stretto e squadrato
+  discord: { file: file('big-shoulders-display', 'big-shoulders-display-latin-wght-normal.woff2'), axes: { wght: 900 } },
 }
 
 // fontkit sa istanziare un carattere variabile solo da un TTF: dal woff2 perde le
@@ -110,6 +112,16 @@ export function tipografo(prefix = 'g') {
   const defs = () => [...glyphs.values()].map((g) => `<path id="${g.id}" d="${g.d}"/>`).join('')
 
   return { riga, misura, defs }
+}
+
+/** Il testo senza i caratteri che quel carattere non ha (emoji e simili), spazi compresi. */
+export function pulisci(key, text) {
+  const f = font(key)
+  return [...String(text ?? '')]
+    .filter((ch) => ch === ' ' || f.hasGlyphForCodePoint(ch.codePointAt(0)))
+    .join('')
+    .replace(/\s+/g, ' ')
+    .trim()
 }
 
 /** Metriche verticali (in px a quella grandezza) per allineare a occhio. */

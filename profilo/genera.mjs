@@ -11,23 +11,68 @@ import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
 import { readFileSync, writeFileSync, mkdirSync, existsSync } from 'node:fs'
 import { caricaCaratteri } from './caratteri.mjs'
-import { commitRecenti, dettaglio, repository, calendario, automatico } from './github.mjs'
+import { commitRecenti, dettaglio, repository, calendario, automatico, storia } from './github.mjs'
 import { testa, tasto, numeri, TEMI } from './svg.mjs'
+import { discordCard, attivita } from './schede.mjs'
+import { discord } from './discord.mjs'
 
 const LOGIN = 'ygpzk'
 const REPO = `${LOGIN}/${LOGIN}`
 const SITO = 'https://www.albertopecchini.it'
+const PZKKO = 'https://pzkko.it'
 const radice = new URL('..', import.meta.url)
 const percorso = (p) => new URL(p, radice)
 
 // I progetti, a parole mie; un repository nuovo che non è qui compare lo stesso,
 // con la descrizione di GitHub.
 const PROGETTI = {
-  AP: { titolo: 'albertopecchini.it', sito: SITO, cosa: 'il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework' },
-  rivaltasulmincio: { titolo: 'rivaltasulmincio.it', sito: 'https://www.rivaltasulmincio.it', cosa: 'il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio' },
-  cascinafontana: { titolo: 'cascinafontana.xyz', sito: 'https://www.cascinafontana.xyz', cosa: 'la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti' },
-  'dariodonelli-': { titolo: 'ing. dario donelli', sito: 'https://dariodonelli.vercel.app', cosa: 'lo studio di ingegneria di Dario Donelli' },
+  AP: { titolo: 'albertopecchini.it', sito: SITO, cosa: 'il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework' },
+  dariodonelli: { titolo: 'ing. dario donelli', sito: 'https://dariodonelli.vercel.app', cosa: 'l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa' },
   ygpzk: { titolo: 'questo profilo', sito: `https://github.com/${LOGIN}`, cosa: 'il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito' },
+}
+
+// I repository che nel profilo non compaiono, né nel cantiere né nei commit:
+// dicono dove abito.
+const NASCOSTI = new Set(['rivaltasulmincio', 'cascinafontana'])
+const visibile = (repo) => !NASCOSTI.has(repo.split('/').pop())
+
+// i nomi con cui firmo i commit: molti hanno un'email che GitHub non lega
+// all'account, e senza questi nomi non li conterebbe nessuno
+const NOMI = ['Alberto Pecchini', 'albertoxpecchini', 'alberto', 'ygpzk']
+
+// Dove trovarmi: alberto è quello del lavoro, pzkko quello online per svago.
+// Niente numeri di telefono.
+const SOCIAL = {
+  alberto: {
+    titolo: 'alberto pecchini',
+    nota: 'il lavoro, e il sito principale',
+    voci: [
+      { id: 'sito', testo: 'albertopecchini.it', url: SITO, pieno: true },
+      { id: 'instagram', testo: 'instagram', url: 'https://www.instagram.com/albertoxpecchini/', alt: 'instagram @albertoxpecchini' },
+      { id: 'tiktok', testo: 'tiktok', url: 'https://www.tiktok.com/@albertoxpecchini', alt: 'tiktok @albertoxpecchini' },
+      { id: 'threads', testo: 'threads', url: 'https://www.threads.net/@albertoxpecchini', alt: 'threads @albertoxpecchini' },
+      { id: 'youtube', testo: 'youtube', url: 'https://www.youtube.com/@alberto-h7y3h', alt: 'youtube @alberto-h7y3h' },
+      { id: 'telegram', testo: 'telegram', url: 'https://t.me/albertopecchini', alt: 'telegram @albertopecchini' },
+      { id: 'pinterest', testo: 'pinterest', url: 'https://www.pinterest.com/albertoxpecchini/', alt: 'pinterest albertoxpecchini' },
+      { id: 'snapchat', testo: 'snapchat', url: 'https://www.snapchat.com/add/albertoxpecchini', alt: 'snapchat albertoxpecchini' },
+      { id: 'kick', testo: 'kick', url: 'https://kick.com/albertoxpecchini', alt: 'kick albertoxpecchini' },
+    ],
+  },
+  pzkko: {
+    titolo: 'pzkko',
+    nota: 'online solo per svago, un po’ come il profilo spam di instagram',
+    voci: [
+      { id: 'sito', testo: 'pzkko.it', url: PZKKO, pieno: true },
+      { id: 'discord', testo: 'discord', url: 'https://discord.com/users/459791358899519498', alt: 'discord pzkko' },
+      { id: 'instagram', testo: 'instagram', url: 'https://www.instagram.com/pzkko/', alt: 'instagram @pzkko' },
+      { id: 'twitch', testo: 'twitch', url: 'https://www.twitch.tv/pzkko', alt: 'twitch pzkko' },
+      { id: 'steam', testo: 'steam', url: 'https://steamcommunity.com/profiles/76561198971719489/', alt: 'steam ygpzk' },
+      { id: 'reddit', testo: 'reddit', url: 'https://www.reddit.com/user/yungpzkko/', alt: 'reddit u/yungpzkko' },
+      { id: 'spotify', testo: 'spotify', url: 'https://open.spotify.com/user/qeefs44bv4bpoa7dk8epagrxf', alt: 'spotify' },
+      { id: 'x', testo: 'x', url: 'https://x.com/ygpzk', alt: 'x @ygpzk' },
+      { id: 'github', testo: 'github', url: `https://github.com/${LOGIN}`, alt: `github ${LOGIN}` },
+    ],
+  },
 }
 
 // i tipi dei commit (conventional commits), detti in italiano
@@ -189,7 +234,7 @@ function novita(commits) {
 
 function cantiere(repos) {
   const righe = ['| progetto | cos’è | ultimo push |', '|:--|:--|--:|']
-  const ordinati = [...repos].sort((a, b) => (a.nome === LOGIN) - (b.nome === LOGIN) || new Date(b.push) - new Date(a.push))
+  const ordinati = repos.filter((r) => visibile(r.completo)).sort((a, b) => (a.nome === LOGIN) - (b.nome === LOGIN) || new Date(b.push) - new Date(a.push))
   for (const r of ordinati) {
     const p = PROGETTI[r.nome]
     const titolo = p ? `**[${p.titolo}](${p.sito})**` : `**${md(r.nome)}**`
@@ -220,7 +265,7 @@ function calcolaNumeri(cal, repos, lingue) {
   return {
     oggi: oggiISO(),
     cifre: [
-      { valore: it(cal.totale), etichetta: 'contributi', nota: `dal ${breve(giorni[0]?.data || oggiISO())}` },
+      { valore: it(cal.totale), etichetta: cal.cosa || 'contributi', nota: `dal ${breve(giorni[0]?.data || oggiISO())}` },
       { valore: it(attuale), etichetta: attuale === 1 ? 'giorno di fila' : 'giorni di fila', nota: `il record è ${pl(record, 'giorno', 'giorni')}`, accento: true },
       { valore: it(top.n), etichetta: 'in un giorno solo', nota: `il ${breve(top.data)}` },
       { valore: it(pubblici), etichetta: 'repository', nota: `${pl(stelle, 'stella', 'stelle')} · ${it(cal.giorni.filter((d) => d.n).length)} giorni attivi` },
@@ -228,6 +273,47 @@ function calcolaNumeri(cal, repos, lingue) {
     trenta: giorni.slice(-30),
     lingue: Object.entries(lingue).map(([nome, byte]) => ({ nome, byte })).sort((a, b) => b.byte - a.byte),
   }
+}
+
+// ── Quando lavoro ───────────────────────────────────────────────────────────
+
+/** Un calendario come quello dei contributi, ma fatto coi commit (ora italiana). */
+function calendarioDaCommit(commits, giorni = 365) {
+  const conti = {}
+  for (const c of commits) {
+    const g = new Date(c.data).toLocaleDateString('sv-SE', fuso)
+    conti[g] = (conti[g] || 0) + 1
+  }
+  const fine = new Date(`${oggiISO()}T12:00:00Z`)
+  const lista = []
+  for (let i = giorni - 1; i >= 0; i--) {
+    const g = new Date(fine - i * 864e5).toISOString().slice(0, 10)
+    lista.push({ data: g, n: conti[g] || 0 })
+  }
+  return { giorni: lista, totale: lista.reduce((s, d) => s + d.n, 0), cosa: 'commit' }
+}
+
+function calcolaAttivita(cal, commits) {
+  const giorni = cal.giorni.filter((d) => d.data <= oggiISO())
+  // settimane di sette giorni contate dalla fine: l'ultima finisce oggi
+  const settimane = []
+  for (let fine = giorni.length; fine > 0; fine -= 7) {
+    const pezzo = giorni.slice(Math.max(0, fine - 7), fine)
+    settimane.unshift({ data: pezzo[0].data, n: pezzo.reduce((s, d) => s + d.n, 0) })
+  }
+  const perGiorno = Array(7).fill(0)
+  for (const d of giorni) perGiorno[(new Date(`${d.data}T12:00:00Z`).getUTCDay() + 6) % 7] += d.n
+  const ore = Array(24).fill(0)
+  for (const c of commits) ore[Number(new Date(c.data).toLocaleString('en-GB', { ...fuso, hour: '2-digit', hourCycle: 'h23' })) % 24]++
+  const perRepo = {}
+  for (const c of commits) {
+    const r = c.repo.split('/')[1]
+    perRepo[r] = (perRepo[r] || 0) + 1
+  }
+  const progetti = Object.entries(perRepo)
+    .map(([nome, n]) => ({ nome: PROGETTI[nome]?.titolo || nome, n }))
+    .sort((a, b) => b.n - a.n)
+  return { oggi: oggiISO(), settimane: settimane.slice(-53), giorni: perGiorno, ore, nCommit: commits.length, progetti }
 }
 
 // ── Il README ───────────────────────────────────────────────────────────────
@@ -267,24 +353,39 @@ function sostituisci(readme, nome, contenuto) {
 
 async function main() {
   await caricaCaratteri()
-  const [tutti, { repos, lingue }, cal] = await Promise.all([commitRecenti(LOGIN), repository(LOGIN), calendario(LOGIN)])
-  const miei = tutti.filter((c) => !automatico(c))
+  const [tutti, { repos, lingue }, cal, dc] = await Promise.all([commitRecenti(LOGIN), repository(LOGIN), calendario(LOGIN), discord()])
+  const miei = tutti.filter((c) => !automatico(c) && visibile(c.repo))
+  // l'ultimo anno di commit, da tutti i rami dei progetti che si vedono
+  const anno = (await storia(LOGIN, repos.filter((r) => visibile(r.completo) && r.nome !== LOGIN), { nomi: NOMI })).filter((c) => !automatico(c))
+  const daiCommit = calendarioDaCommit(anno)
+  // se GitHub non conta i miei contributi (email non collegata) contano i commit
+  const calNumeri = cal.totale >= daiCommit.totale ? cal : daiCommit
   const due = await Promise.all(miei.slice(0, 2).map(dettaglio))
 
   // le immagini
   for (const t of Object.keys(TEMI)) scrivi(`testa-${t}.svg`, testa(t).svg)
   const TASTI = [
     { id: 'sito', testo: 'albertopecchini.it', url: SITO, pieno: true },
-    { id: 'pzkko', testo: 'pzkko.it', url: 'https://www.pzkko.it' },
-    { id: 'wiki', testo: 'pzkkopedia', url: 'https://www.pzkko.it/wiki/' },
+    { id: 'pzkko', testo: 'pzkko.it', url: PZKKO },
     { id: 'scrivimi', testo: 'scrivimi', url: 'mailto:pzkko@yahoo.com' },
   ]
   const tasti = TASTI.map((k) => {
     const [chiaro, scuro] = ['chiaro', 'scuro'].map((t) => scrivi(`tasto-${k.id}-${t}.svg`, tasto(t, k.testo, { pieno: k.pieno })))
     return `<a href="${k.url}">${picture(chiaro, scuro, k.testo, 'height="46"')}</a>`
   })
-  const n = calcolaNumeri(cal, repos, lingue)
+  const n = calcolaNumeri(calNumeri, repos, lingue)
   const [numChiaro, numScuro] = ['chiaro', 'scuro'].map((t) => scrivi(`numeri-${t}.svg`, numeri(t, n)))
+  const a = calcolaAttivita(daiCommit, anno)
+  const [attChiaro, attScuro] = ['chiaro', 'scuro'].map((t) => scrivi(`attivita-${t}.svg`, attivita(t, a)))
+  const social = Object.entries(SOCIAL).map(([gruppo, g]) => {
+    const pills = g.voci.map((k) => {
+      const [chiaro, scuro] = ['chiaro', 'scuro'].map((t) => scrivi(`social-${gruppo}-${k.id}-${t}.svg`, tasto(t, k.testo, { pieno: k.pieno, piccolo: true })))
+      return `<a href="${k.url}" title="${k.alt || k.testo}">${picture(chiaro, scuro, k.alt || k.testo, 'height="40"')}</a>`
+    })
+    return `<p><b>${g.titolo}</b> <sub>· ${g.nota}</sub><br>\n  ${pills.join('\n  ')}\n</p>`
+  })
+  // pzkko su Discord: se Discord non risponde resta la scheda di prima
+  if (dc) for (const t of Object.keys(TEMI)) scrivi(`discord-${t}.svg`, discordCard(t, dc))
 
   // il README
   let readme = readFileSync(percorso('README.md'), 'utf8')
@@ -294,10 +395,15 @@ async function main() {
   readme = sostituisci(readme, 'novita', novita(miei))
   readme = sostituisci(readme, 'cantiere', cantiere(repos))
   readme = sostituisci(readme, 'numeri', picture(numChiaro, numScuro, `i numeri: ${n.cifre.map((s) => `${s.valore} ${s.etichetta}`).join(', ')}`, 'width="100%"'))
+  readme = sostituisci(readme, 'attivita', picture(attChiaro, attScuro, `quando lavoro: ${a.nCommit} commit nell’ultimo anno, settimana per settimana, per giorno e per ora`, 'width="100%"'))
+  readme = sostituisci(readme, 'social', social.join('\n\n'))
+  // la scheda di Discord ha dentro avatar e banner: passa da jsDelivr, come l'hero
+  if (existsSync(percorso('immagini/discord-chiaro.svg')))
+    readme = sostituisci(readme, 'pzkko', `<a href="${PZKKO}">${picture(urlTesta('discord-chiaro.svg'), urlTesta('discord-scuro.svg'), `pzkko su discord, dal vivo${dc ? `: ${dc.stato}` : ''}`, 'width="100%"')}</a>`)
   readme = sostituisci(readme, 'piede', `<sub>ultimo commit letto: <a href="${due[0]?.url || '#'}"><code>${due[0]?.sha.slice(0, 7) || '—'}</code></a> del ${due[0] ? quando(due[0].data) : '—'} · il profilo si rifà da solo ogni 15 minuti</sub>`)
   writeFileSync(percorso('README.md'), readme)
 
-  console.log(`profilo rifatto: ${due.map((c) => c.sha.slice(0, 7)).join(', ')} · ${n.cifre.map((s) => `${s.valore} ${s.etichetta}`).join(' · ')}`)
+  console.log(`profilo rifatto: ${due.map((c) => c.sha.slice(0, 7)).join(', ')} · ${n.cifre.map((s) => `${s.valore} ${s.etichetta}`).join(' · ')} · discord ${dc ? dc.stato : 'non risponde'}`)
 }
 
 main().catch((e) => {

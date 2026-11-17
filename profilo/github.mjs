@@ -135,6 +135,37 @@ export async function repository(login) {
 }
 
 /**
+ * Tutti i commit dell'ultimo anno, da tutti i rami dei repository dati. Sono miei
+ * se GitHub li lega al mio account o se portano uno dei miei nomi: molti sono
+ * firmati con un'email che GitHub non collega, e il calendario dei contributi
+ * non li conta. I rami condividono la storia: appena una pagina non porta niente
+ * di nuovo si passa al ramo dopo.
+ */
+export async function storia(login, repos, { nomi = [], giorni = 371 } = {}) {
+  const dal = new Date(Date.now() - giorni * 864e5).toISOString()
+  const miei = new Set([login, ...nomi].map((n) => n.toLowerCase()))
+  const visti = new Map()
+  for (const r of repos) {
+    const rami = (await gh(`/repos/${r.completo}/branches?per_page=100`, { optional: true })) || [{ name: r.ramo }]
+    for (const b of rami.slice(0, 12)) {
+      for (let page = 1; page <= 20; page++) {
+        const list = await gh(`/repos/${r.completo}/commits?sha=${encodeURIComponent(b.name)}&since=${dal}&per_page=100&page=${page}`, { optional: true })
+        if (!list?.length) break
+        let nuovi = 0
+        for (const c of list) {
+          if (visti.has(c.sha)) continue
+          nuovi++
+          const mio = miei.has((c.author?.login || '').toLowerCase()) || miei.has((c.commit.author?.name || '').toLowerCase())
+          visti.set(c.sha, mio && c.parents.length < 2 ? { sha: c.sha, repo: r.completo, data: c.commit.author?.date || c.commit.committer?.date, titolo: c.commit.message.split('\n')[0].trim(), autore: c.author?.login || c.commit.author?.name } : null)
+        }
+        if (!nuovi || list.length < 100) break
+      }
+    }
+  }
+  return [...visti.values()].filter(Boolean)
+}
+
+/**
  * Il calendario dei contributi dell'ultimo anno: con il token da GraphQL, se no
  * dalla pagina pubblica dei contributi (la stessa che GitHub mostra nel profilo).
  */

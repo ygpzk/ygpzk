@@ -10,10 +10,9 @@
 
 <!-- tasti:inizio -->
 <p align="center">
-  <a href="https://www.albertopecchini.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-sito-scuro.svg?v=b3bf6bb1"><img src="immagini/tasto-sito-chiaro.svg?v=479ed5da" alt="albertopecchini.it" height="46"></picture></a>
-  <a href="https://www.pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-pzkko-scuro.svg?v=8a840ca0"><img src="immagini/tasto-pzkko-chiaro.svg?v=2e4ed483" alt="pzkko.it" height="46"></picture></a>
-  <a href="https://www.pzkko.it/wiki/"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-wiki-scuro.svg?v=57bd31ad"><img src="immagini/tasto-wiki-chiaro.svg?v=8c738dac" alt="pzkkopedia" height="46"></picture></a>
-  <a href="mailto:pzkko@yahoo.com"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-scrivimi-scuro.svg?v=c9794fed"><img src="immagini/tasto-scrivimi-chiaro.svg?v=27894f73" alt="scrivimi" height="46"></picture></a>
+  <a href="https://www.albertopecchini.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-sito-scuro.svg?v=43d3b335"><img src="immagini/tasto-sito-chiaro.svg?v=40c8477c" alt="albertopecchini.it" height="46"></picture></a>
+  <a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-pzkko-scuro.svg?v=8d44b5eb"><img src="immagini/tasto-pzkko-chiaro.svg?v=9f076606" alt="pzkko.it" height="46"></picture></a>
+  <a href="mailto:pzkko@yahoo.com"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/tasto-scrivimi-scuro.svg?v=e049816a"><img src="immagini/tasto-scrivimi-chiaro.svg?v=e1dcac4f" alt="scrivimi" height="46"></picture></a>
 </p>
 <!-- tasti:fine -->
 
@@ -21,9 +20,41 @@
 
 ### ciao, sono alberto.
 
-diplomato geometra a rivalta sul mincio, in provincia di mantova: rilevo e disegno edifici, scrivo siti web a mano, costruisco marchi. lo stesso metodo, la stessa cura.
+diplomato geometra: rilevo e disegno edifici, scrivo siti web a mano, costruisco marchi. lo stesso metodo, la stessa cura. il sito principale è **[albertopecchini.it](https://www.albertopecchini.it)**.
+
+online sono anche **pzkko**, ma quello è solo per svago, un po’ come il profilo spam su instagram: sta su **[pzkko.it](https://pzkko.it)**, col mio profilo discord dal vivo.
 
 qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: html, css e javascript senza framework, build con vite, immagini preparate da script, un server in casa per i dati e github actions che rifotografano i siti ogni ora. lo scrivo insieme a [claude code](https://claude.com/claude-code), un commit alla volta — e qui sotto, aggiornato da solo, c’è l’ultima cosa che ho cambiato.
+
+<br>
+
+## ✦ dove trovarmi
+
+<!-- social:inizio -->
+<p><b>alberto pecchini</b> <sub>· il lavoro, e il sito principale</sub><br>
+  <a href="https://www.albertopecchini.it" title="albertopecchini.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-sito-scuro.svg?v=778a00c0"><img src="immagini/social-alberto-sito-chiaro.svg?v=54fd8f92" alt="albertopecchini.it" height="40"></picture></a>
+  <a href="https://www.instagram.com/albertoxpecchini/" title="instagram @albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-instagram-scuro.svg?v=02eb0c28"><img src="immagini/social-alberto-instagram-chiaro.svg?v=d0c153f5" alt="instagram @albertoxpecchini" height="40"></picture></a>
+  <a href="https://www.tiktok.com/@albertoxpecchini" title="tiktok @albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-tiktok-scuro.svg?v=3e352d45"><img src="immagini/social-alberto-tiktok-chiaro.svg?v=079ccb0b" alt="tiktok @albertoxpecchini" height="40"></picture></a>
+  <a href="https://www.threads.net/@albertoxpecchini" title="threads @albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-threads-scuro.svg?v=6df18e3d"><img src="immagini/social-alberto-threads-chiaro.svg?v=5077c929" alt="threads @albertoxpecchini" height="40"></picture></a>
+  <a href="https://www.youtube.com/@alberto-h7y3h" title="youtube @alberto-h7y3h"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-youtube-scuro.svg?v=d2050a87"><img src="immagini/social-alberto-youtube-chiaro.svg?v=88bc3d7b" alt="youtube @alberto-h7y3h" height="40"></picture></a>
+  <a href="https://t.me/albertopecchini" title="telegram @albertopecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-telegram-scuro.svg?v=7c04f884"><img src="immagini/social-alberto-telegram-chiaro.svg?v=56a39d30" alt="telegram @albertopecchini" height="40"></picture></a>
+  <a href="https://www.pinterest.com/albertoxpecchini/" title="pinterest albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-pinterest-scuro.svg?v=d380239c"><img src="immagini/social-alberto-pinterest-chiaro.svg?v=9f522250" alt="pinterest albertoxpecchini" height="40"></picture></a>
+  <a href="https://www.snapchat.com/add/albertoxpecchini" title="snapchat albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-snapchat-scuro.svg?v=27bf58b0"><img src="immagini/social-alberto-snapchat-chiaro.svg?v=2dbf1d07" alt="snapchat albertoxpecchini" height="40"></picture></a>
+  <a href="https://kick.com/albertoxpecchini" title="kick albertoxpecchini"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-alberto-kick-scuro.svg?v=20771cbc"><img src="immagini/social-alberto-kick-chiaro.svg?v=e844a587" alt="kick albertoxpecchini" height="40"></picture></a>
+</p>
+
+<p><b>pzkko</b> <sub>· online solo per svago, un po’ come il profilo spam di instagram</sub><br>
+  <a href="https://pzkko.it" title="pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-sito-scuro.svg?v=7ce4d773"><img src="immagini/social-pzkko-sito-chiaro.svg?v=7d39114a" alt="pzkko.it" height="40"></picture></a>
+  <a href="https://discord.com/users/459791358899519498" title="discord pzkko"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-discord-scuro.svg?v=96c93128"><img src="immagini/social-pzkko-discord-chiaro.svg?v=b2a2efdc" alt="discord pzkko" height="40"></picture></a>
+  <a href="https://www.instagram.com/pzkko/" title="instagram @pzkko"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-instagram-scuro.svg?v=02eb0c28"><img src="immagini/social-pzkko-instagram-chiaro.svg?v=d0c153f5" alt="instagram @pzkko" height="40"></picture></a>
+  <a href="https://www.twitch.tv/pzkko" title="twitch pzkko"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-twitch-scuro.svg?v=79ef7f33"><img src="immagini/social-pzkko-twitch-chiaro.svg?v=50532c36" alt="twitch pzkko" height="40"></picture></a>
+  <a href="https://steamcommunity.com/profiles/76561198971719489/" title="steam ygpzk"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-steam-scuro.svg?v=15ad83cc"><img src="immagini/social-pzkko-steam-chiaro.svg?v=c1397b6f" alt="steam ygpzk" height="40"></picture></a>
+  <a href="https://www.reddit.com/user/yungpzkko/" title="reddit u/yungpzkko"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-reddit-scuro.svg?v=a3d5641a"><img src="immagini/social-pzkko-reddit-chiaro.svg?v=45d6fe6e" alt="reddit u/yungpzkko" height="40"></picture></a>
+  <a href="https://open.spotify.com/user/qeefs44bv4bpoa7dk8epagrxf" title="spotify"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-spotify-scuro.svg?v=5df768d2"><img src="immagini/social-pzkko-spotify-chiaro.svg?v=b7a1b50e" alt="spotify" height="40"></picture></a>
+  <a href="https://x.com/ygpzk" title="x @ygpzk"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-x-scuro.svg?v=25eb2033"><img src="immagini/social-pzkko-x-chiaro.svg?v=93527022" alt="x @ygpzk" height="40"></picture></a>
+  <a href="https://github.com/ygpzk" title="github ygpzk"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/social-pzkko-github-scuro.svg?v=2b819be5"><img src="immagini/social-pzkko-github-chiaro.svg?v=e7012144" alt="github ygpzk" height="40"></picture></a>
+</p>
+<!-- social:fine -->
 
 <br>
 
@@ -84,10 +115,8 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 17 nov 2026 |
-| **dariodonelli**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | — | 10 nov 2026 |
-| **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
-| **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 17 nov 2026 |
+| **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
 | **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 17 nov 2026 |
 <!-- cantiere:fine -->
 
@@ -96,13 +125,23 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=fa65d0e0"><img src="immagini/numeri-chiaro.svg?v=855695ef" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5c4a6101"><img src="immagini/numeri-chiaro.svg?v=02573c77" alt="i numeri: 731 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/3d-scuro.svg">
   <img src="profile-3d-contrib/3d-chiaro.svg" alt="il calendario dei contributi in 3D" width="100%">
 </picture>
+
+<br>
+
+## ✦ quando lavoro
+
+<sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
+
+<!-- attivita:inizio -->
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=90a3debe"><img src="immagini/attivita-chiaro.svg?v=cec24d28" alt="quando lavoro: 731 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<!-- attivita:fine -->
 
 <br>
 
@@ -117,6 +156,16 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 </p>
 
 <sub>e poi claude code, sharp, ffmpeg, puppeteer, resend, lighthouse e un server di casa dietro tailscale funnel.</sub>
+
+<br>
+
+## ✦ pzkko, per svago
+
+<sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
+
+<!-- pzkko:inizio -->
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="immagini/discord-scuro.svg"><img src="immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<!-- pzkko:fine -->
 
 <br><br>
 
