@@ -32,37 +32,33 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; via il controllo delle pagine e la regola del credito
+### ①&nbsp; matriciOS
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `main` · 16 nov 2026, 01:17 · [`9b53340`](https://github.com/ygpzk/AP/commit/9b53340eb05a01e87b59375e6026b6abc8a8e354)
+◆ **commit** · [AP](https://github.com/ygpzk/AP) su `main` · 17 nov 2026, 19:19 · [`a95dc33`](https://github.com/ygpzk/AP/commit/a95dc335173db9521cc886790fc369c4629e38b5)
 
-Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regola del credito con il www non esiste più. Via anche CLAUDE.md, che conteneva solo quella regola.
-
-> **i file:** <b>2</b> modificati − <b>3</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+3</b> in più, <b>−208</b> in meno
+> **i file:** <b>9</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2435</b> in più, <b>−0</b> in meno
 
 ```diff
-! .github/workflows/build.yml  +2 −7
-! albertopecchini.it/src/templates/pages/tempo.js  +1 −1
-- CLAUDE.md  +0 −5
-- albertopecchini.it/tools/controllo/README.md  +0 −36
-- albertopecchini.it/tools/controllo/controllo.mjs  +0 −159
+@@ MatriciOS/ @@
++ LEGGIMI.txt  +30 −0
++ MatriciOS.exe
++ build.bat  +21 −0
++ src/  (6 file aggiunti)
 ```
 
-### ②&nbsp; clean
+### ②&nbsp; testi all'attualità, doppio titolo UNIRSM e il sito Donelli diventato archivio
 
-◆ **commit** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 13 nov 2026, 18:56 · [`13b9a83`](https://github.com/ygpzk/AP/commit/13b9a837b4ec917c5dfdc3a938f80255013de42e)
+🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 17 nov 2026, 15:54 · [`244a30b`](https://github.com/ygpzk/AP/commit/244a30bb53d7378086f50d76d5ee1c82c621231b)
 
-> **i file:** <b>14</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+0</b> in più, <b>−1431</b> in meno
+- studio: biografia, fatti, timeline e curriculum col doppio titolo UNIMORE–UNIRSM (iscrizione dell'11.11.2026) e le materie vere del primo anno - portfolio: la scheda Donelli descrive il sito del 10.11.2026 (34 lavori, quattro categorie, tavole PDF originali, dati personali sfumati, dominio ancora provvisorio) al…
+
+> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+53</b> in più, <b>−24</b> in meno
 
 ```diff
-- .claude/skills/lezione/SKILL.md  +0 −71
-- .claude/skills/nota/SKILL.md  +0 −39
-- .github/workflows/build.yml  +0 −63
-- .github/workflows/catture.yml  +0 −107
-- ./  (4 file rimossi)
-- .vscode/launch.json  +0 −13
-- .vscode/tasks.json  +0 −40
-- esperimenti/preventivo-allianz-mirtilli/  (4 file rimossi)
+@@ albertopecchini.it/src/data/ @@
+! projects.js  +16 −15
+! rubrica.js  +17 −1
+! studio.js  +20 −8
 ```
 <!-- commit:fine -->
 
@@ -71,7 +67,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 24 commit, soprattutto su `AP` (5), `sito` (4), `dariodonelli` (4), `wiki` (3).
+**negli ultimi 7 giorni** 22 commit, soprattutto su `AP` (7), `sito` (5), `wiki` (3), `deutschland` (2).
 
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
@@ -88,7 +84,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 16 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il portfolio, **pzkko.it** (il muro con i social, la scena 3D, i giochi, il cercapersone zero e la pzkkopedia) e la parodia **bettercallpekko.it**: siti statici scritti a mano, con Vite e niente framework | 17 nov 2026 |
 | **dariodonelli**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | — | 10 nov 2026 |
 | **[rivaltasulmincio.it](https://www.rivaltasulmincio.it)**<br><sub>[ygpzk/rivaltasulmincio](https://github.com/ygpzk/rivaltasulmincio)</sub> | il sito della Pro Loco di Rivalta sul Mincio: notizie, eventi, fotografie e il borgo nel Parco del Mincio | 3 nov 2026 |
 | **[cascinafontana.xyz](https://www.cascinafontana.xyz)**<br><sub>[ygpzk/cascinafontana](https://github.com/ygpzk/cascinafontana)</sub> | la Società Agricola Cascina Fontana: i prodotti, la galleria e i contatti | 27 set 2026 |
@@ -100,7 +96,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=dcc3687c"><img src="immagini/numeri-chiaro.svg?v=4ec0f071" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=fa65d0e0"><img src="immagini/numeri-chiaro.svg?v=855695ef" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -131,7 +127,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/9b53340eb05a01e87b59375e6026b6abc8a8e354"><code>9b53340</code></a> del 16 nov 2026, 01:17 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/a95dc335173db9521cc886790fc369c4629e38b5"><code>a95dc33</code></a> del 17 nov 2026, 19:19 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
