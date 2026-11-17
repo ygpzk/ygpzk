@@ -71,7 +71,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 28 commit, soprattutto su `AP` (5), `wiki` (5), `deutschland` (5), `sito` (4).
+**negli ultimi 7 giorni** 24 commit, soprattutto su `AP` (5), `sito` (4), `dariodonelli` (4), `wiki` (3).
 
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
@@ -100,7 +100,7 @@ Il controllo (tools/controllo/controllo.mjs) non gira più nella build: la regol
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=f0ef3237"><img src="immagini/numeri-chiaro.svg?v=e7fa77ea" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=dcc3687c"><img src="immagini/numeri-chiaro.svg?v=4ec0f071" alt="i numeri: 0 contributi, 0 giorni di fila, 0 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
