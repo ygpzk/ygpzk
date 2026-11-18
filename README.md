@@ -63,36 +63,44 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; il profilo per svago, fatto come il profilo di Discord
+### ①&nbsp; font, cornice ed effetto veri di Discord, e i progetti con le catture vere
 
-✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 17 nov 2026, 22:58 · [`9351b3d`](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 18 nov 2026, 04:13 · [`1c3b96b`](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
 
-Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal profilo pubblico, l'effetto dei cristalli rifatto in SVG e CSS, le schede Bacheca / Progetti / Attività / Social in nove lingue, i dieci progetti per svago e tutti i social (senza numeri di telefono né indirizzi). Contiene la verifica del…
+Rifatta la pagina: scheda e pannello separati, barra delle schede che resta agganciata, versione per telefono, tema chiaro e scuro calcolati come li calcola Discord. I caratteri sono quelli del client (gg sans, gg mono, ABC Ginto Nord e Pricedown per il nome, il carattere 17); la cornice «Crystals (Peridot)» e…
 
-> **i file:** <b>26</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2793</b> in più, <b>−0</b> in meno
+> **i file:** <b>10</b> modificati + <b>124</b> aggiunti − <b>7</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+2652</b> in più, <b>−808</b> in meno
 
 ```diff
 @@ pzkko.it/ @@
-+ ./  (6 file aggiunti)
-+ public/.well-known/discord  +1 −0
-+ public/  (8 file aggiunti)
-+ public/assets/  (5 file aggiunti)
-+ public/media/  (5 file aggiunti)
-+ src/site.css  +288 −0
+! README.md  +45 −19
+! package.json  +3 −2
+! vercel.json  +56 −9
+! public/404.html  +8 −11
+! public/index.html  +47 −35
+! public/sitemap.xml  +1 −1
+! public/assets/app.js  +680 −218
+! public/assets/config.js  +70 −48
+! public/assets/i18n.js  +15 −0
+! src/site.css  +447 −224
++ public/assets/flags/  (9 file aggiunti)
++ public/assets/fx.js  +108 −0
++ public/assets/icons.js  +4 −0
+# … e altre 15 righe come queste
 ```
 
-### ②&nbsp; matriciOS
+### ②&nbsp; decorazione dell'avatar tonda e cristalli dentro la scheda
 
-◆ **commit** · [AP](https://github.com/ygpzk/AP) su `main` · 17 nov 2026, 19:19 · [`a95dc33`](https://github.com/ygpzk/AP/commit/a95dc335173db9521cc886790fc369c4629e38b5)
+🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 18 nov 2026, 03:06 · [`205f846`](https://github.com/ygpzk/AP/commit/205f846148f17bf64b47a3915e8fe4d48318dfb4)
 
-> **i file:** <b>9</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2435</b> in più, <b>−0</b> in meno
+La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava un ovale spostato. I cristalli ruotavano attorno alla punta per transform-box: fill-box; ora crescono dal bordo, non entrano nel pannello a destra, sporgono solo nello spazio libero e restano bassi sotto i pulsanti di lingua e tema sul…
+
+> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+62</b> in più, <b>−26</b> in meno
 
 ```diff
-@@ MatriciOS/ @@
-+ LEGGIMI.txt  +30 −0
-+ MatriciOS.exe
-+ build.bat  +21 −0
-+ src/  (6 file aggiunti)
+@@ pzkko.it/ @@
+! public/assets/effect.js  +57 −21
+! src/site.css  +5 −5
 ```
 <!-- commit:fine -->
 
@@ -101,14 +109,14 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 17 commit, soprattutto su `AP` (7), `sito` (5), `pzkko.it` (1), `pzkko` (1).
+**negli ultimi 7 giorni** 19 commit, soprattutto su `AP` (7), `sito` (5), `pzkko.it` (3), `pzkko` (1).
 
+- **18 nov** · **pzkko.it** — font, cornice ed effetto veri di Discord, e i progetti con le catture vere · [AP↗](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
 - **17 nov** · **pzkko.it** — il profilo per svago, fatto come il profilo di Discord · [AP↗](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
 - **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
-- **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
 <!-- novita:fine -->
 
 <br>
@@ -118,9 +126,9 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 17 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 18 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 17 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 18 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -128,7 +136,7 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=62b35a8d"><img src="immagini/numeri-chiaro.svg?v=fbf17e53" alt="i numeri: 732 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=da71d340"><img src="immagini/numeri-chiaro.svg?v=23989ade" alt="i numeri: 734 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -143,7 +151,7 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=70415c22"><img src="immagini/attivita-chiaro.svg?v=3be96a04" alt="quando lavoro: 732 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=32a9d6b2"><img src="immagini/attivita-chiaro.svg?v=9b5afc7f" alt="quando lavoro: 734 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -167,7 +175,7 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@18273189c7e9/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@18273189c7e9/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@b7cfc66b1dc1/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@b7cfc66b1dc1/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: dnd" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -179,7 +187,7 @@ Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal pro
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078"><code>9351b3d</code></a> del 17 nov 2026, 22:58 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546"><code>1c3b96b</code></a> del 18 nov 2026, 04:13 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
