@@ -63,7 +63,25 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; matriciOS
+### ①&nbsp; il profilo per svago, fatto come il profilo di Discord
+
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 17 nov 2026, 22:58 · [`9351b3d`](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
+
+Tema #ccff00 → #9d00ff col velo di Discord, dati dal vivo da Lanyard e dal profilo pubblico, l'effetto dei cristalli rifatto in SVG e CSS, le schede Bacheca / Progetti / Attività / Social in nove lingue, i dieci progetti per svago e tutti i social (senza numeri di telefono né indirizzi). Contiene la verifica del…
+
+> **i file:** <b>26</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2793</b> in più, <b>−0</b> in meno
+
+```diff
+@@ pzkko.it/ @@
++ ./  (6 file aggiunti)
++ public/.well-known/discord  +1 −0
++ public/  (8 file aggiunti)
++ public/assets/  (5 file aggiunti)
++ public/media/  (5 file aggiunti)
++ src/site.css  +288 −0
+```
+
+### ②&nbsp; matriciOS
 
 ◆ **commit** · [AP](https://github.com/ygpzk/AP) su `main` · 17 nov 2026, 19:19 · [`a95dc33`](https://github.com/ygpzk/AP/commit/a95dc335173db9521cc886790fc369c4629e38b5)
 
@@ -76,21 +94,6 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 + build.bat  +21 −0
 + src/  (6 file aggiunti)
 ```
-
-### ②&nbsp; testi all'attualità, doppio titolo UNIRSM e il sito Donelli diventato archivio
-
-🔧 **riparazione** in `sito` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 17 nov 2026, 15:54 · [`244a30b`](https://github.com/ygpzk/AP/commit/244a30bb53d7378086f50d76d5ee1c82c621231b)
-
-- studio: biografia, fatti, timeline e curriculum col doppio titolo UNIMORE–UNIRSM (iscrizione dell'11.11.2026) e le materie vere del primo anno - portfolio: la scheda Donelli descrive il sito del 10.11.2026 (34 lavori, quattro categorie, tavole PDF originali, dati personali sfumati, dominio ancora provvisorio) al…
-
-> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+53</b> in più, <b>−24</b> in meno
-
-```diff
-@@ albertopecchini.it/src/data/ @@
-! projects.js  +16 −15
-! rubrica.js  +17 −1
-! studio.js  +20 −8
-```
 <!-- commit:fine -->
 
 <br>
@@ -98,14 +101,14 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 22 commit, soprattutto su `AP` (7), `sito` (5), `wiki` (3), `deutschland` (2).
+**negli ultimi 7 giorni** 17 commit, soprattutto su `AP` (7), `sito` (5), `pzkko.it` (1), `pzkko` (1).
 
+- **17 nov** · **pzkko.it** — il profilo per svago, fatto come il profilo di Discord · [AP↗](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 - **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
 - **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
 - **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 - **10 nov** · **studio** — il selfie allo specchio sotto «Prima per curiosità, poi per mestiere» · [AP↗](https://github.com/ygpzk/AP/commit/39b80ef850ac5f88b3cdee96f08071110d49d3e4)
-- **10 nov** · **deutschland** — Deutschland 3, il tavolo dei ricordi, i tasti veri della macchinetta e i pacchetti che aprono il loro album · [AP↗](https://github.com/ygpzk/AP/commit/c40dae80e1d7122597795165a5614a9d80bece21)
 <!-- novita:fine -->
 
 <br>
@@ -125,7 +128,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5c4a6101"><img src="immagini/numeri-chiaro.svg?v=02573c77" alt="i numeri: 731 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=62b35a8d"><img src="immagini/numeri-chiaro.svg?v=fbf17e53" alt="i numeri: 732 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -140,7 +143,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=90a3debe"><img src="immagini/attivita-chiaro.svg?v=cec24d28" alt="quando lavoro: 731 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=70415c22"><img src="immagini/attivita-chiaro.svg?v=3be96a04" alt="quando lavoro: 732 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -176,7 +179,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/a95dc335173db9521cc886790fc369c4629e38b5"><code>a95dc33</code></a> del 17 nov 2026, 19:19 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078"><code>9351b3d</code></a> del 17 nov 2026, 22:58 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
