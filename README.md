@@ -63,44 +63,48 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; font, cornice ed effetto veri di Discord, e i progetti con le catture vere
+### ①&nbsp; Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali
 
-✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 18 nov 2026, 04:13 · [`1c3b96b`](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 19 nov 2026, 17:47 · [`c5a2dee`](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
 
-Rifatta la pagina: scheda e pannello separati, barra delle schede che resta agganciata, versione per telefono, tema chiaro e scuro calcolati come li calcola Discord. I caratteri sono quelli del client (gg sans, gg mono, ABC Ginto Nord e Pricedown per il nome, il carattere 17); la cornice «Crystals (Peridot)» e…
+Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.css), si aprono sopra il profilo e giocano coi $pzk della banca. Parole si gioca anche in chat (/parole). Nel profilo i due progetti puntano a questi, con le descrizioni nelle nove lingue e le catture vere dei giochi nuovi. I caratteri…
 
-> **i file:** <b>10</b> modificati + <b>124</b> aggiunti − <b>7</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+2652</b> in più, <b>−808</b> in meno
+> **i file:** <b>23</b> modificati + <b>5</b> aggiunti − <b>6</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+822</b> in più, <b>−201</b> in meno
 
 ```diff
 @@ pzkko.it/ @@
-! README.md  +45 −19
-! package.json  +3 −2
-! vercel.json  +56 −9
-! public/404.html  +8 −11
-! public/index.html  +47 −35
-! public/sitemap.xml  +1 −1
-! public/assets/app.js  +680 −218
-! public/assets/config.js  +70 −48
-! public/assets/i18n.js  +15 −0
-! src/site.css  +447 −224
-+ public/assets/flags/  (9 file aggiunti)
-+ public/assets/fx.js  +108 −0
-+ public/assets/icons.js  +4 −0
-# … e altre 15 righe come queste
+! README.md  +11 −0
+! public/assets/  (5 file modificati)
+! public/media/p/parole/  (7 file modificati)
+! public/media/p/trivia/  (8 file modificati)
+! public/serranda/index.html  +1 −1
+! src/site.css  +15 −0
++ public/games/foglio.css  +59 −0
++ public/games/parole/parole.css  +73 −0
++ public/games/parole/parole.js  +216 −0
++ public/games/trivia/trivia.css  +77 −0
++ public/games/trivia/trivia.js  +203 −0
+- public/media/p/parole/06.webp
+- public/media/p/parole/07.webp
+# … e altre 4 righe come queste
 ```
 
-### ②&nbsp; decorazione dell'avatar tonda e cristalli dentro la scheda
+### ②&nbsp; tutto gira nella pagina, la chat fa tutto in chat e il cercapersone ha lo sfondo trasparente
 
-🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 18 nov 2026, 03:06 · [`205f846`](https://github.com/ygpzk/AP/commit/205f846148f17bf64b47a3915e8fe4d48318dfb4)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 19 nov 2026, 15:42 · [`d67724c`](https://github.com/ygpzk/AP/commit/d67724c828ed519162e159e52fc88c08b9b46985)
 
-La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava un ovale spostato. I cristalli ruotavano attorno alla punta per transform-box: fill-box; ora crescono dal bordo, non entrano nel pannello a destra, sporgono solo nello spazio libero e restano bassi sotto i pulsanti di lingua e tema sul…
+- il cercapersone 3D e i tavoli si aprono sopra il profilo (openHere), senza finestra e senza il muro dietro - in bacheca il cercapersone vivo su sfondo trasparente; aperto, sfondo trasparente e un po' più lontano - chat: il conto in un riquadro (/account, /esci), i tavoli dalla barra, virtual, pzkstore e lavatrice…
 
-> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+62</b> in più, <b>−26</b> in meno
+> **i file:** <b>6</b> modificati &nbsp;·&nbsp; **le righe:** <b>+409</b> in più, <b>−34</b> in meno
 
 ```diff
 @@ pzkko.it/ @@
-! public/assets/effect.js  +57 −21
-! src/site.css  +5 −5
+! README.md  +17 −4
+! public/assets/app.js  +38 −4
+! public/assets/config.js  +4 −3
+! public/assets/dchat.js  +242 −21
+! public/telefono/zero/zero.js  +1 −1
+! src/site.css  +107 −1
 ```
 <!-- commit:fine -->
 
@@ -109,14 +113,14 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 13 commit, soprattutto su `AP` (7), `pzkko.it` (3), `sito` (2), `pzkko` (1).
+**negli ultimi 7 giorni** 17 commit, soprattutto su `pzkko.it` (7), `AP` (7), `sito` (2), `pzkko` (1).
 
+- **19 nov** · **pzkko.it** — Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali · [AP↗](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
+- **19 nov** · **pzkko.it** — tutto gira nella pagina, la chat fa tutto in chat e il cercapersone ha lo sfondo trasparente · [AP↗](https://github.com/ygpzk/AP/commit/d67724c828ed519162e159e52fc88c08b9b46985)
+- **19 nov** · **pzkko.it** — i progetti veri dentro il sito, la chat Discord, Posta OS e Pulizia OS · [AP↗](https://github.com/ygpzk/AP/commit/1e4dcbe6494d0d5518dfb4648026d979e3dfaab0)
 - **18 nov** · **pzkko.it** — font, cornice ed effetto veri di Discord, e i progetti con le catture vere · [AP↗](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
 - **17 nov** · **pzkko.it** — il profilo per svago, fatto come il profilo di Discord · [AP↗](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
 - **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
-- **13 nov** · **sito** — /live/euro/, il € nero 3D che gira come livello web per Camo · [AP↗](https://github.com/ygpzk/AP/commit/828930fbed9e7332a33329f06af83f6baf30f992)
-- **11 nov** · **pzk os, regia** — stato dei sistemi, agenti gratis, cruscotto con account e hosting · [AP↗](https://github.com/ygpzk/AP/commit/a3ba2913a317a0eb4960d99a34c7297fac443049)
-- **10 nov** · **deutschland** — Deutschland 4, la macchinetta gialla di Stoccarda frontale sul suo muro · [AP↗](https://github.com/ygpzk/AP/commit/f46f86b8e1b72a4729e550843fdbd56cfd96e7cf)
 <!-- novita:fine -->
 
 <br>
@@ -126,7 +130,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 18 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 19 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
 | **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 19 nov 2026 |
 <!-- cantiere:fine -->
@@ -136,7 +140,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=efa2ad53"><img src="immagini/numeri-chiaro.svg?v=dc4c6c1b" alt="i numeri: 734 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=12a23dd6"><img src="immagini/numeri-chiaro.svg?v=c56110f6" alt="i numeri: 738 commit, 4 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -151,7 +155,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=32f8a014"><img src="immagini/attivita-chiaro.svg?v=96484066" alt="quando lavoro: 734 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=e278bcdc"><img src="immagini/attivita-chiaro.svg?v=de901f9a" alt="quando lavoro: 738 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -175,7 +179,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2ef267b7b6d1/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2ef267b7b6d1/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a3dcbb8f7246/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a3dcbb8f7246/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -187,7 +191,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546"><code>1c3b96b</code></a> del 18 nov 2026, 04:13 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4"><code>c5a2dee</code></a> del 19 nov 2026, 17:47 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
