@@ -63,7 +63,30 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali
+### ①&nbsp; si entra con l'email e un codice, niente password; l'invito, le novita' e il regalo di instagram
+
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 19 nov 2026, 19:06 · [`19cf822`](https://github.com/ygpzk/AP/commit/19cf8221f8c72edbf9a406f3ccb1955fe0ac3483)
+
+Un riquadro solo in stile Discord (public/accesso/) per profilo, chat, cercapersone e tavoli: l'invito all'arrivo, l'email e il codice di sei cifre che vale dieci minuti, il nome se il conto e' nuovo, le novita', e il regalo di 2.000 $pzk per chi segue i due profili di instagram, che Alberto approva dal tasto della…
+
+> **i file:** <b>9</b> modificati + <b>2</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+715</b> in più, <b>−196</b> in meno
+
+```diff
+@@ pzkko.it/ @@
+! README.md  +34 −1
+! public/assets/app.js  +51 −0
+! public/assets/dchat.js  +26 −55
+! public/games/pzk.js  +24 −42
+! public/index.html  +1 −0
+! public/info/index.html  +2 −1
+! public/telefono/app/account.js  +1 −1
+! public/telefono/zero/os/account.js  +32 −69
+! src/site.css  +26 −27
++ public/accesso/accesso.css  +140 −0
++ public/accesso/accesso.js  +378 −0
+```
+
+### ②&nbsp; Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali
 
 ✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 19 nov 2026, 17:47 · [`c5a2dee`](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
 
@@ -88,24 +111,6 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 - public/media/p/parole/07.webp
 # … e altre 4 righe come queste
 ```
-
-### ②&nbsp; tutto gira nella pagina, la chat fa tutto in chat e il cercapersone ha lo sfondo trasparente
-
-✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 19 nov 2026, 15:42 · [`d67724c`](https://github.com/ygpzk/AP/commit/d67724c828ed519162e159e52fc88c08b9b46985)
-
-- il cercapersone 3D e i tavoli si aprono sopra il profilo (openHere), senza finestra e senza il muro dietro - in bacheca il cercapersone vivo su sfondo trasparente; aperto, sfondo trasparente e un po' più lontano - chat: il conto in un riquadro (/account, /esci), i tavoli dalla barra, virtual, pzkstore e lavatrice…
-
-> **i file:** <b>6</b> modificati &nbsp;·&nbsp; **le righe:** <b>+409</b> in più, <b>−34</b> in meno
-
-```diff
-@@ pzkko.it/ @@
-! README.md  +17 −4
-! public/assets/app.js  +38 −4
-! public/assets/config.js  +4 −3
-! public/assets/dchat.js  +242 −21
-! public/telefono/zero/zero.js  +1 −1
-! src/site.css  +107 −1
-```
 <!-- commit:fine -->
 
 <br>
@@ -113,14 +118,14 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 17 commit, soprattutto su `pzkko.it` (7), `AP` (7), `sito` (2), `pzkko` (1).
+**negli ultimi 7 giorni** 18 commit, soprattutto su `pzkko.it` (8), `AP` (7), `sito` (2), `pzkko` (1).
 
+- **19 nov** · **pzkko.it** — si entra con l'email e un codice, niente password; l'invito, le novita' e il regalo di instagram · [AP↗](https://github.com/ygpzk/AP/commit/19cf8221f8c72edbf9a406f3ccb1955fe0ac3483)
 - **19 nov** · **pzkko.it** — Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali · [AP↗](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
 - **19 nov** · **pzkko.it** — tutto gira nella pagina, la chat fa tutto in chat e il cercapersone ha lo sfondo trasparente · [AP↗](https://github.com/ygpzk/AP/commit/d67724c828ed519162e159e52fc88c08b9b46985)
 - **19 nov** · **pzkko.it** — i progetti veri dentro il sito, la chat Discord, Posta OS e Pulizia OS · [AP↗](https://github.com/ygpzk/AP/commit/1e4dcbe6494d0d5518dfb4648026d979e3dfaab0)
 - **18 nov** · **pzkko.it** — font, cornice ed effetto veri di Discord, e i progetti con le catture vere · [AP↗](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
 - **17 nov** · **pzkko.it** — il profilo per svago, fatto come il profilo di Discord · [AP↗](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
-- **13 nov** · **pzkko** — su iPhone a tutto schermo dalla Home, niente pagine che sbordano · [AP↗](https://github.com/ygpzk/AP/commit/a5e42f1cad605e1381a48643d6e5cea364a776b2)
 <!-- novita:fine -->
 
 <br>
@@ -140,7 +145,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=12a23dd6"><img src="immagini/numeri-chiaro.svg?v=c56110f6" alt="i numeri: 738 commit, 4 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=083cd254"><img src="immagini/numeri-chiaro.svg?v=9aca5730" alt="i numeri: 739 commit, 4 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -155,7 +160,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=e278bcdc"><img src="immagini/attivita-chiaro.svg?v=de901f9a" alt="quando lavoro: 738 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=51c248e8"><img src="immagini/attivita-chiaro.svg?v=974e660d" alt="quando lavoro: 739 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -179,7 +184,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a3dcbb8f7246/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a3dcbb8f7246/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@6e01a546f2af/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@6e01a546f2af/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -191,7 +196,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4"><code>c5a2dee</code></a> del 19 nov 2026, 17:47 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/19cf8221f8c72edbf9a406f3ccb1955fe0ac3483"><code>19cf822</code></a> del 19 nov 2026, 19:06 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
