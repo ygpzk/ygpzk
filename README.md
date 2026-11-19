@@ -109,7 +109,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 16 commit, soprattutto su `AP` (7), `sito` (5), `pzkko.it` (3), `pzkko` (1).
+**negli ultimi 7 giorni** 13 commit, soprattutto su `AP` (7), `pzkko.it` (3), `sito` (2), `pzkko` (1).
 
 - **18 nov** · **pzkko.it** — font, cornice ed effetto veri di Discord, e i progetti con le catture vere · [AP↗](https://github.com/ygpzk/AP/commit/1c3b96b85f975ec0e343a55d8f5854b0a188d546)
 - **17 nov** · **pzkko.it** — il profilo per svago, fatto come il profilo di Discord · [AP↗](https://github.com/ygpzk/AP/commit/9351b3db603df0d09a73c6d92556d09f2085a078)
@@ -128,7 +128,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 18 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 18 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 19 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -175,7 +175,7 @@ La decorazione veniva schiacciata a 132 px (max-width del preflight) e diventava
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@d2e7598931a2/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@d2e7598931a2/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2ef267b7b6d1/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2ef267b7b6d1/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
