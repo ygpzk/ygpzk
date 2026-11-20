@@ -118,7 +118,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 17 commit, soprattutto su `pzkko.it` (8), `AP` (7), `sito` (1), `pzkko` (1).
+**negli ultimi 7 giorni** 12 commit, soprattutto su `pzkko.it` (8), `AP` (3), `sito` (1).
 
 - **19 nov** · **pzkko.it** — si entra con l'email e un codice, niente password; l'invito, le novita' e il regalo di instagram · [AP↗](https://github.com/ygpzk/AP/commit/19cf8221f8c72edbf9a406f3ccb1955fe0ac3483)
 - **19 nov** · **pzkko.it** — Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali · [AP↗](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
@@ -184,7 +184,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@aa5d1217a727/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@aa5d1217a727/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@415df89e705c/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@415df89e705c/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
