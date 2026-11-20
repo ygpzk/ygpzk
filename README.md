@@ -118,7 +118,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 18 commit, soprattutto su `pzkko.it` (8), `AP` (7), `sito` (2), `pzkko` (1).
+**negli ultimi 7 giorni** 17 commit, soprattutto su `pzkko.it` (8), `AP` (7), `sito` (1), `pzkko` (1).
 
 - **19 nov** · **pzkko.it** — si entra con l'email e un codice, niente password; l'invito, le novita' e il regalo di instagram · [AP↗](https://github.com/ygpzk/AP/commit/19cf8221f8c72edbf9a406f3ccb1955fe0ac3483)
 - **19 nov** · **pzkko.it** — Parole e Trivia rifatti da zero in stile pzk, e sono loro i progetti ufficiali · [AP↗](https://github.com/ygpzk/AP/commit/c5a2dee2f83359770ea102c67e74a22c293c64d4)
@@ -137,7 +137,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 19 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 19 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 20 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -184,7 +184,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@6e01a546f2af/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@6e01a546f2af/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@afa41b5a4aa1/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@afa41b5a4aa1/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: idle" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
