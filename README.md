@@ -184,7 +184,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@4adfca7375b8/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@4adfca7375b8/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@d1a110a861ce/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@d1a110a861ce/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
