@@ -145,7 +145,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=955bcc42"><img src="immagini/numeri-chiaro.svg?v=0f3ef6f0" alt="i numeri: 739 commit, 0 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=924b6435"><img src="immagini/numeri-chiaro.svg?v=65c3b209" alt="i numeri: 739 commit, 0 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -160,7 +160,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=2d7daa40"><img src="immagini/attivita-chiaro.svg?v=eabf27b6" alt="quando lavoro: 739 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=8d3023e2"><img src="immagini/attivita-chiaro.svg?v=2c06b251" alt="quando lavoro: 739 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -184,7 +184,7 @@ Parole e Trivia sono due fogli col nastro come gli altri tavoli (games/foglio.cs
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@e4a528dd164a/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@e4a528dd164a/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@efd272e58df1/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@efd272e58df1/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
