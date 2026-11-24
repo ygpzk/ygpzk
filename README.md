@@ -98,7 +98,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 26 commit, soprattutto su `pzkko.it` (17), `direttaos` (3), `AP` (2), `albertopecchini.it` (2).
+**negli ultimi 7 giorni** 24 commit, soprattutto su `pzkko.it` (17), `direttaos` (3), `albertopecchini.it` (2), `lezionios` (1).
 
 - **24 nov** · **lezionios** — la regia delle lezioni · [AP↗](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
 - **24 nov** · **direttaos** — scene nuove e regia aggiornata · [AP↗](https://github.com/ygpzk/AP/commit/7d277bade6c9d96b2dfca8caf1cf744a79c8b157)
