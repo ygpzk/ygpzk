@@ -63,30 +63,33 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; configurazione di avvio Chrome per VS Code
+### ①&nbsp; il README resta nella build, serve al controllo di sicurezza
 
-🧹 **manutenzione** · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 00:13 · [`8733429`](https://github.com/ygpzk/AP/commit/8733429054755a1f4d0cbf17ceeda51c0685ec4e)
+🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 11:42 · [`1edfc0b`](https://github.com/ygpzk/AP/commit/1edfc0bc988d215a3374e55cd52ce6c9e9cc73c7)
 
-Aggiunge .vscode/launch.json per aprire localhost:8080 in Chrome dal debugger, senza impostazioni personali.
-
-> **i file:** <b>1</b> aggiunto &nbsp;·&nbsp; **le righe:** <b>+15</b> in più, <b>−0</b> in meno
-
-```diff
-@@ .vscode/ @@
-+ launch.json  +15 −0
-```
-
-### ②&nbsp; README aggiornato a sito autosufficiente, sicurezza e progetti nuovi
-
-📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 00:13 · [`5e5a7ec`](https://github.com/ygpzk/AP/commit/5e5a7ecc68fff7b9a4b91efc8b0277cbaf4dffc2)
-
-Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole, Angoli/pzkmaps/calcolatrice, Diretta OS e telecamere; tolto ogni rimando ad albertopecchini.it.
-
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+61</b> in più, <b>−4</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+0</b> in più, <b>−1</b> in meno
 
 ```diff
 @@ pzkko.it/ @@
-! README.md  +61 −4
+! .vercelignore  +0 −1
+```
+
+### ②&nbsp; la regia delle lezioni
+
+✨ **novità** in `lezionios` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 11:25 · [`cc758cf`](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
+
+- server, regia e motore Python
+
+> **i file:** <b>67</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+4933</b> in più, <b>−0</b> in meno
+
+```diff
+@@ LezioniOS/ @@
++ ./  (14 file aggiunti)
++ motore/  (20 file aggiunti)
++ motore/stile/  (4 file aggiunti)
++ motore/stile/katex/  (4 file aggiunti)
++ motore/stile/katex/fonts/  (20 file aggiunti)
++ pubblico/  (5 file aggiunti)
 ```
 <!-- commit:fine -->
 
@@ -95,14 +98,14 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 21 commit, soprattutto su `pzkko.it` (14), `AP` (2), `direttaos` (2), `albertopecchini.it` (2).
+**negli ultimi 7 giorni** 26 commit, soprattutto su `pzkko.it` (17), `direttaos` (3), `AP` (2), `albertopecchini.it` (2).
 
+- **24 nov** · **lezionios** — la regia delle lezioni · [AP↗](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
+- **24 nov** · **direttaos** — scene nuove e regia aggiornata · [AP↗](https://github.com/ygpzk/AP/commit/7d277bade6c9d96b2dfca8caf1cf744a79c8b157)
+- **24 nov** · **pzkko.it** — giochi, chat, telecamere e contenuti aggiornati · [AP↗](https://github.com/ygpzk/AP/commit/22bd8e632854953dd2cd694fa196e678ba5621ea)
+- **24 nov** · **pzkko.it** — community in home, banner e scheda #community · [AP↗](https://github.com/ygpzk/AP/commit/e8b8f3589597f975a214c46bec3a2e5c1b42af36)
 - **24 nov** · **pzkko.it** — la pagina delle telecamere di casa · [AP↗](https://github.com/ygpzk/AP/commit/9e137fda28b5fd50bd88cd47ca4e337dc3a102fd)
 - **24 nov** · **pzkko.it** — la pagina di Diretta OS, il setup e le catture · [AP↗](https://github.com/ygpzk/AP/commit/b94587cb2fc8b88ebad0118ab1499273eaca406b)
-- **24 nov** · **direttaos** — l'installer per Windows · [AP↗](https://github.com/ygpzk/AP/commit/2355ab04be8dc8c76dc599a4a6f47960a79faa50)
-- **24 nov** · **direttaos** — la regia della diretta, le scene e i sensori · [AP↗](https://github.com/ygpzk/AP/commit/09af092298b6d5120c400e27f645e10c9ece0c43)
-- **24 nov** · **pzkko.it** — Angoli, pzkmaps e calcolatrice, e le app del telefono da sole · [AP↗](https://github.com/ygpzk/AP/commit/372df530c960b83b10cbda8956b7220deb0a1461)
-- **24 nov** · **pzkko.it** — sito autosufficiente e traduzioni caricate solo quando servono · [AP↗](https://github.com/ygpzk/AP/commit/c39c314e194ef84b244fbeae4623c1d7a5b835e4)
 <!-- novita:fine -->
 
 <br>
@@ -114,7 +117,7 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 24 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 23 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 24 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -122,7 +125,7 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=7f14429e"><img src="immagini/numeri-chiaro.svg?v=17594254" alt="i numeri: 750 commit, 1 giorno di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=37dd162b"><img src="immagini/numeri-chiaro.svg?v=85e7aa8a" alt="i numeri: 755 commit, 1 giorno di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -137,7 +140,7 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=b194a542"><img src="immagini/attivita-chiaro.svg?v=8b4fa6ba" alt="quando lavoro: 750 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=00878f18"><img src="immagini/attivita-chiaro.svg?v=d8aa6d61" alt="quando lavoro: 755 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -161,7 +164,7 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@4acb3d012b31/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@4acb3d012b31/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -173,7 +176,7 @@ Documentati guardia di build e CSP, API chiuse, lingue su richiesta, app singole
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/8733429054755a1f4d0cbf17ceeda51c0685ec4e"><code>8733429</code></a> del 24 nov 2026, 00:13 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/1edfc0bc988d215a3374e55cd52ce6c9e9cc73c7"><code>1edfc0b</code></a> del 24 nov 2026, 11:42 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
