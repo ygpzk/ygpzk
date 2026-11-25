@@ -63,26 +63,30 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; followers albertoxpecchini 1667, pzkko 185
+### ①&nbsp; i siti nascosti si saltano invece di fermare tutto
 
-🧹 **manutenzione** in `ig` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 14:40 · [`1b322cf`](https://github.com/ygpzk/AP/commit/1b322cff62aa82e49a3f5a3d9d0062d5a52b9a36)
+🔧 **riparazione** in `catture` · [AP](https://github.com/ygpzk/AP) su `main` · 25 nov 2026, 22:46 · [`81444c0`](https://github.com/ygpzk/AP/commit/81444c061bdb8c3b5ad75d5f1a7bceea4f7d28f8)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+3</b> in più, <b>−3</b> in meno
+Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è più fra quelli pubblicati e non ha web.url: catture.mjs si fermava con «manca web.url» e il workflow programmato falliva a ogni giro dal 15 novembre. Ora un sito nascosto o tolto dal portfolio si salta con un avviso e gli altri vanno avanti.
+
+> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−6</b> in meno
+
+```diff
+! .github/workflows/build.yml  +1 −1
+! .github/workflows/catture.yml  +2 −2
+! albertopecchini.it/tools/catture/catture.mjs  +8 −3
+```
+
+### ②&nbsp; followers albertoxpecchini 1667, pzkko 185
+
+🧹 **manutenzione** in `ig` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 22:41 · [`e5dc1b3`](https://github.com/ygpzk/AP/commit/e5dc1b395cdabbacd03c83cad4b0f0ee187199ca)
+
+> **i file:** <b>1</b> modificato + <b>1</b> aggiunto &nbsp;·&nbsp; **le righe:** <b>+12</b> in più, <b>−3</b> in meno
 
 ```diff
 @@ pzkko.it/public/media/ig/ @@
-! index.json  +3 −3
-```
-
-### ②&nbsp; anche la pagina info spiega la lettera di prova
-
-📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 03:53 · [`6dbd92f`](https://github.com/ygpzk/AP/commit/6dbd92f548d8bcbe08f9250a79beab2535c30b24)
-
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+1</b> in più, <b>−1</b> in meno
-
-```diff
-@@ pzkko.it/public/info/ @@
-! index.html  +1 −1
+! index.json  +12 −3
++ pzkko/stories/4038460524071681681.webp
 ```
 <!-- commit:fine -->
 
@@ -91,14 +95,14 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 40 commit, soprattutto su `pzkko.it` (22), `dariodonelli` (7), `direttaos` (4), `ig` (2).
+**negli ultimi 7 giorni** 51 commit, soprattutto su `pzkko.it` (27), `dariodonelli` (7), `direttaos` (5), `ig` (4).
 
-- **25 nov** · **pzkko.it** — accesso con lettera di prova e pagina su sicurezza e casella usa e getta · [AP↗](https://github.com/ygpzk/AP/commit/5ce8c51dea1186cc99673fc4dbbdbfbb4d865256)
-- **25 nov** · **direttaos** — la scena dove con il terreno e il mondo aggiornati · [AP↗](https://github.com/ygpzk/AP/commit/74c80106017bf38045a603a153a8e8ce1046a531)
-- **25 nov** · **pzkko.it** — social completi, Synesthesia nei progetti e nuova scheda Instagram · [AP↗](https://github.com/ygpzk/AP/commit/086bdbeaf6470caa0a589b5d31bd179a3048fd5f)
-- **24 nov** · **pzkko.it** — Instagram in bacheca, nativo e senza account · [AP↗](https://github.com/ygpzk/AP/commit/bbe0d88940ef4c72be2cc2084c16811aabc1c82c)
-- **24 nov** · **lezionios** — la regia delle lezioni · [AP↗](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
-- **24 nov** · **direttaos** — scene nuove e regia aggiornata · [AP↗](https://github.com/ygpzk/AP/commit/7d277bade6c9d96b2dfca8caf1cf744a79c8b157)
+- **25 nov** · **telecamere** — la porta di e-vision in stile pzkko · [AP↗](https://github.com/ygpzk/AP/commit/1a435855ac93b9778556859dbb865e25827220af)
+- **25 nov** · **pzkmaps** — Leaflet in casa, senza CDN di terzi · [AP↗](https://github.com/ygpzk/AP/commit/3c80411126caa1cccc89a46500c67fb8bd6d3631)
+- **25 nov** · **pzkko.it** — i popup in stile pzk e le app da provare · [AP↗](https://github.com/ygpzk/AP/commit/9304667c4e1519e1efa8452ec3dbe546259876a2)
+- **25 nov** · **pzkko.it** — la vetrina in diretta dal pc (canale SSE, senza aspettare il CDN) · [AP↗](https://github.com/ygpzk/AP/commit/a7f7fd65ce47d77a8593ffdf480849a065d46c86)
+- **25 nov** · **direttaos** — «dove vivo» in 3D con Babylon.js · [AP↗](https://github.com/ygpzk/AP/commit/a8f8fc48864ca1302afeb40f796949b0ded6eefe)
+- **25 nov** · **pzkko.it** — la vetrina dal pc (Spotify suo, app aperte, in ufficio / in giro) · [AP↗](https://github.com/ygpzk/AP/commit/64c89ed2a4dc099a8313276a589db41ea4aca706)
 <!-- novita:fine -->
 
 <br>
@@ -118,7 +122,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=6cb8345e"><img src="immagini/numeri-chiaro.svg?v=32069288" alt="i numeri: 774 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=b18adcec"><img src="immagini/numeri-chiaro.svg?v=50b01cd6" alt="i numeri: 785 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -133,7 +137,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=f53a26c7"><img src="immagini/attivita-chiaro.svg?v=8aab18f4" alt="quando lavoro: 774 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=39ff2341"><img src="immagini/attivita-chiaro.svg?v=39b5aa26" alt="quando lavoro: 785 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -157,7 +161,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a67483ce2853/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@a67483ce2853/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2e716dcb49f5/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2e716dcb49f5/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -169,7 +173,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/1b322cff62aa82e49a3f5a3d9d0062d5a52b9a36"><code>1b322cf</code></a> del 25 nov 2026, 14:40 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/81444c061bdb8c3b5ad75d5f1a7bceea4f7d28f8"><code>81444c0</code></a> del 25 nov 2026, 22:46 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
