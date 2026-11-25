@@ -63,33 +63,26 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; il README resta nella build, serve al controllo di sicurezza
+### ①&nbsp; anche la pagina info spiega la lettera di prova
 
-🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 11:42 · [`1edfc0b`](https://github.com/ygpzk/AP/commit/1edfc0bc988d215a3374e55cd52ce6c9e9cc73c7)
+📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 03:53 · [`6dbd92f`](https://github.com/ygpzk/AP/commit/6dbd92f548d8bcbe08f9250a79beab2535c30b24)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+0</b> in più, <b>−1</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+1</b> in più, <b>−1</b> in meno
 
 ```diff
-@@ pzkko.it/ @@
-! .vercelignore  +0 −1
+@@ pzkko.it/public/info/ @@
+! index.html  +1 −1
 ```
 
-### ②&nbsp; la regia delle lezioni
+### ②&nbsp; la casella di prova tiene la lettera qualche giorno, non per sempre
 
-✨ **novità** in `lezionios` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 24 nov 2026, 11:25 · [`cc758cf`](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
+📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 03:51 · [`7ca1030`](https://github.com/ygpzk/AP/commit/7ca103001d6c065b34e9f9131e4164a1ea4dd171)
 
-- server, regia e motore Python
-
-> **i file:** <b>67</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+4933</b> in più, <b>−0</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+2</b> in più, <b>−2</b> in meno
 
 ```diff
-@@ LezioniOS/ @@
-+ ./  (14 file aggiunti)
-+ motore/  (20 file aggiunti)
-+ motore/stile/  (4 file aggiunti)
-+ motore/stile/katex/  (4 file aggiunti)
-+ motore/stile/katex/fonts/  (20 file aggiunti)
-+ pubblico/  (5 file aggiunti)
+@@ pzkko.it/public/accesso/ @@
+! index.html  +2 −2
 ```
 <!-- commit:fine -->
 
@@ -98,14 +91,14 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 24 commit, soprattutto su `pzkko.it` (17), `direttaos` (3), `albertopecchini.it` (2), `lezionios` (1).
+**negli ultimi 7 giorni** 39 commit, soprattutto su `pzkko.it` (22), `dariodonelli` (7), `direttaos` (4), `AP` (2).
 
+- **25 nov** · **pzkko.it** — accesso con lettera di prova e pagina su sicurezza e casella usa e getta · [AP↗](https://github.com/ygpzk/AP/commit/5ce8c51dea1186cc99673fc4dbbdbfbb4d865256)
+- **25 nov** · **direttaos** — la scena dove con il terreno e il mondo aggiornati · [AP↗](https://github.com/ygpzk/AP/commit/74c80106017bf38045a603a153a8e8ce1046a531)
+- **25 nov** · **pzkko.it** — social completi, Synesthesia nei progetti e nuova scheda Instagram · [AP↗](https://github.com/ygpzk/AP/commit/086bdbeaf6470caa0a589b5d31bd179a3048fd5f)
+- **24 nov** · **pzkko.it** — Instagram in bacheca, nativo e senza account · [AP↗](https://github.com/ygpzk/AP/commit/bbe0d88940ef4c72be2cc2084c16811aabc1c82c)
 - **24 nov** · **lezionios** — la regia delle lezioni · [AP↗](https://github.com/ygpzk/AP/commit/cc758cfc14a80e3b09b1ab0b56c21ae4cd368be7)
 - **24 nov** · **direttaos** — scene nuove e regia aggiornata · [AP↗](https://github.com/ygpzk/AP/commit/7d277bade6c9d96b2dfca8caf1cf744a79c8b157)
-- **24 nov** · **pzkko.it** — giochi, chat, telecamere e contenuti aggiornati · [AP↗](https://github.com/ygpzk/AP/commit/22bd8e632854953dd2cd694fa196e678ba5621ea)
-- **24 nov** · **pzkko.it** — community in home, banner e scheda #community · [AP↗](https://github.com/ygpzk/AP/commit/e8b8f3589597f975a214c46bec3a2e5c1b42af36)
-- **24 nov** · **pzkko.it** — la pagina delle telecamere di casa · [AP↗](https://github.com/ygpzk/AP/commit/9e137fda28b5fd50bd88cd47ca4e337dc3a102fd)
-- **24 nov** · **pzkko.it** — la pagina di Diretta OS, il setup e le catture · [AP↗](https://github.com/ygpzk/AP/commit/b94587cb2fc8b88ebad0118ab1499273eaca406b)
 <!-- novita:fine -->
 
 <br>
@@ -115,8 +108,8 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 24 nov 2026 |
-| **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 10 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 25 nov 2026 |
+| **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 25 nov 2026 |
 | **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 24 nov 2026 |
 <!-- cantiere:fine -->
 
@@ -125,7 +118,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=37dd162b"><img src="immagini/numeri-chiaro.svg?v=85e7aa8a" alt="i numeri: 755 commit, 1 giorno di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=a69e5169"><img src="immagini/numeri-chiaro.svg?v=ad8b0643" alt="i numeri: 773 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -140,7 +133,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=00878f18"><img src="immagini/attivita-chiaro.svg?v=d8aa6d61" alt="quando lavoro: 755 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=3f576b42"><img src="immagini/attivita-chiaro.svg?v=1f9e3654" alt="quando lavoro: 773 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -164,7 +157,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@62f99ec763df/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: dnd" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -176,7 +169,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/1edfc0bc988d215a3374e55cd52ce6c9e9cc73c7"><code>1edfc0b</code></a> del 24 nov 2026, 11:42 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/6dbd92f548d8bcbe08f9250a79beab2535c30b24"><code>6dbd92f</code></a> del 25 nov 2026, 03:53 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
