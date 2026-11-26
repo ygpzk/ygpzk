@@ -63,26 +63,45 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; followers albertoxpecchini 12310
+### ①&nbsp; Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso
 
-🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 15:36 · [`7a0464a`](https://github.com/ygpzk/AP/commit/7a0464ac9c44ad0161aeb3712bd6f16b7414b7c0)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 00:36 · [`f7766e6`](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+29</b> in più, <b>−29</b> in meno
+Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
+
+> **i file:** <b>12</b> modificati + <b>65</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+16.720</b> in più, <b>−133</b> in meno
 
 ```diff
-@@ pzkko.it/public/media/tt/ @@
-! index.json  +29 −29
+@@ pzkko.it/ @@
+! api/vetrina.mjs  +5 −2
+! public/assets/  (4 file modificati)
+! public/assets/i18n/en.js  +1 −1
+! public/assets/i18n/it.js  +1 −1
+! public/index.html  +1 −0
+! public/sitemap.xml  +1 −0
+! scripts/dev.mjs  +3 −1
+! src/site.css  +335 −0
+! vercel.json  +11 −1
++ public/assets/  (9 file aggiunti)
++ public/assets/studio/  (4 file aggiunti)
++ public/assets/studio/esperimenti/  (11 file aggiunti)
++ public/frontiera/esperimenti/ar/ar.js  +499 −0
+# … e altre 36 righe come queste
 ```
 
-### ②&nbsp; followers albertoxpecchini 12310
+### ②&nbsp; i brief di Studio, Frontiera, app, strumenti, «chi sono», «da provare», Attività e Adesso
 
-🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 14:36 · [`f4cb67d`](https://github.com/ygpzk/AP/commit/f4cb67dde46a97ab13a987a1867f7831cc44df8e)
+📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 00:35 · [`db5bff1`](https://github.com/ygpzk/AP/commit/db5bff12a785b7e27b58b78cf28620f7bd4f5346)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+34</b> in più, <b>−34</b> in meno
+Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro giri del 26.11: lo Studio in bacheca, la Frontiera a /frontiera/, le dieci app in-profile, la scheda Strumenti, il riquadro «chi sono», «da provare», la scheda Attività e Adesso vivo.
+
+> **i file:** <b>2</b> modificati + <b>13</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2356</b> in più, <b>−0</b> in meno
 
 ```diff
-@@ pzkko.it/public/media/tt/ @@
-! index.json  +34 −34
+@@ pzkko.it/ @@
+! CLAUDE.md  +67 −0
+! README.md  +119 −0
++ design/  (13 file aggiunti)
 ```
 <!-- commit:fine -->
 
@@ -91,14 +110,14 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 72 commit, soprattutto su `pzkko.it` (30), `dariodonelli` (7), `ig` (6), `direttaos` (6).
+**negli ultimi 7 giorni** 86 commit, soprattutto su `pzkko.it` (32), `tt` (13), `ig` (8), `dariodonelli` (7).
 
+- **27 nov** · **pzkko.it** — Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso · [AP↗](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
+- **27 nov** · **studio** — la cassetta degli attrezzi allineata a pzkko.it · [AP↗](https://github.com/ygpzk/AP/commit/8a8a830ea4a77fd2865a8b7c129eaad9de169053)
+- **27 nov** · **tempo** — le pagine di allora sono oscurate, con le foto rifatte · [AP↗](https://github.com/ygpzk/AP/commit/7f8c4e79152336819ab3f1bbc0a636bf0c742f97)
+- **26 nov** · **pzkko.it** — lo sfondo è la serranda col tema di Discord, piena di graffiti; tema chiaro/scuro al sole · [AP↗](https://github.com/ygpzk/AP/commit/2475f62701c26a2e71cbfd328a5982e18ffc15ae)
+- **26 nov** · **pzkko.it** — il profilo «segnaletica» (cartello con la lumaca, lavori in corso) · [AP↗](https://github.com/ygpzk/AP/commit/f438401e349e49ad0aa2a20139c48cffe4caaf6c)
 - **26 nov** · **pzkko.it** — TikTok con la stessa dashboard di Instagram · [AP↗](https://github.com/ygpzk/AP/commit/ab473782bda61e87195b6a02061cdb2775cccdf9)
-- **26 nov** · **pzkko.it** — i regali di Instagram da decidere, nel conto · [AP↗](https://github.com/ygpzk/AP/commit/9bf1fceca848b47275640a3f244c948ac6089963)
-- **26 nov** · **pzkko.it** — TikTok in bacheca · [AP↗](https://github.com/ygpzk/AP/commit/722ffeb7b0223875bbe85c168e31dd362966e46a)
-- **26 nov** · **portfolio** — tornano pzkko e Better Call Pekko · [AP↗](https://github.com/ygpzk/AP/commit/a5ab2263e693d1b09dd2cff7d361ad734aa6ae9c)
-- **26 nov** · **studio** — le passioni e il fascicolo di Better Call Pekko · [AP↗](https://github.com/ygpzk/AP/commit/4e014ec4d20144bafb06bab64626450051858e4e)
-- **26 nov** · **albertopecchini.it** — la pagina Sicurezza, con le protezioni che ci sono davvero · [AP↗](https://github.com/ygpzk/AP/commit/966bdc533a0ba3fd918d760aab003f9eb12bbd6a)
 <!-- novita:fine -->
 
 <br>
@@ -108,7 +127,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 26 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 27 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 25 nov 2026 |
 | **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 26 nov 2026 |
 <!-- cantiere:fine -->
@@ -118,7 +137,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=38498e70"><img src="immagini/numeri-chiaro.svg?v=6375d887" alt="i numeri: 809 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5e5674f2"><img src="immagini/numeri-chiaro.svg?v=4dc7c8bd" alt="i numeri: 825 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -133,7 +152,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=4bd89262"><img src="immagini/attivita-chiaro.svg?v=c9616ea4" alt="quando lavoro: 809 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=a0528338"><img src="immagini/attivita-chiaro.svg?v=37757891" alt="quando lavoro: 825 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -157,7 +176,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -169,7 +188,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/7a0464ac9c44ad0161aeb3712bd6f16b7414b7c0"><code>7a0464a</code></a> del 26 nov 2026, 15:36 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44"><code>f7766e6</code></a> del 27 nov 2026, 00:36 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
