@@ -63,30 +63,28 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; i siti nascosti si saltano invece di fermare tutto
+### ①&nbsp; la scheda social resta larga anche senza la colonna
 
-🔧 **riparazione** in `catture` · [AP](https://github.com/ygpzk/AP) su `main` · 25 nov 2026, 22:46 · [`81444c0`](https://github.com/ygpzk/AP/commit/81444c061bdb8c3b5ad75d5f1a7bceea4f7d28f8)
+🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 03:08 · [`3017ba2`](https://github.com/ygpzk/AP/commit/3017ba2fe541b2090c191de334b8c38f7e8b5d50)
 
-Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è più fra quelli pubblicati e non ha web.url: catture.mjs si fermava con «manca web.url» e il workflow programmato falliva a ogni giro dal 15 novembre. Ora un sito nascosto o tolto dal portfolio si salta con un avviso e gli altri vanno avanti.
+Se la colonna dei profili non viene disegnata (estensione o errore), la griglia metteva il main nella cella da 60px: follower, testo e tessere finivano schiacciati in una striscia. Ora rail e main hanno una cella fissa, la colonna del rail si chiude da sola quando è vuota e il main prende tutta la scheda. Vale per…
 
-> **i file:** <b>3</b> modificati &nbsp;·&nbsp; **le righe:** <b>+11</b> in più, <b>−6</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+6</b> in più, <b>−4</b> in meno
 
 ```diff
-! .github/workflows/build.yml  +1 −1
-! .github/workflows/catture.yml  +2 −2
-! albertopecchini.it/tools/catture/catture.mjs  +8 −3
+@@ pzkko.it/src/ @@
+! site.css  +6 −4
 ```
 
-### ②&nbsp; followers albertoxpecchini 1667, pzkko 185
+### ②&nbsp; followers albertoxpecchini 12310
 
-🧹 **manutenzione** in `ig` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 25 nov 2026, 22:41 · [`e5dc1b3`](https://github.com/ygpzk/AP/commit/e5dc1b395cdabbacd03c83cad4b0f0ee187199ca)
+🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 02:36 · [`1f02136`](https://github.com/ygpzk/AP/commit/1f02136e0540829fa2609a478487a203cb8b8483)
 
-> **i file:** <b>1</b> modificato + <b>1</b> aggiunto &nbsp;·&nbsp; **le righe:** <b>+12</b> in più, <b>−3</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+27</b> in più, <b>−27</b> in meno
 
 ```diff
-@@ pzkko.it/public/media/ig/ @@
-! index.json  +12 −3
-+ pzkko/stories/4038460524071681681.webp
+@@ pzkko.it/public/media/tt/ @@
+! index.json  +27 −27
 ```
 <!-- commit:fine -->
 
@@ -95,14 +93,14 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 51 commit, soprattutto su `pzkko.it` (27), `dariodonelli` (7), `direttaos` (5), `ig` (4).
+**negli ultimi 7 giorni** 70 commit, soprattutto su `pzkko.it` (33), `dariodonelli` (7), `direttaos` (6), `albertopecchini.it` (4).
 
-- **25 nov** · **telecamere** — la porta di e-vision in stile pzkko · [AP↗](https://github.com/ygpzk/AP/commit/1a435855ac93b9778556859dbb865e25827220af)
-- **25 nov** · **pzkmaps** — Leaflet in casa, senza CDN di terzi · [AP↗](https://github.com/ygpzk/AP/commit/3c80411126caa1cccc89a46500c67fb8bd6d3631)
-- **25 nov** · **pzkko.it** — i popup in stile pzk e le app da provare · [AP↗](https://github.com/ygpzk/AP/commit/9304667c4e1519e1efa8452ec3dbe546259876a2)
-- **25 nov** · **pzkko.it** — la vetrina in diretta dal pc (canale SSE, senza aspettare il CDN) · [AP↗](https://github.com/ygpzk/AP/commit/a7f7fd65ce47d77a8593ffdf480849a065d46c86)
-- **25 nov** · **direttaos** — «dove vivo» in 3D con Babylon.js · [AP↗](https://github.com/ygpzk/AP/commit/a8f8fc48864ca1302afeb40f796949b0ded6eefe)
-- **25 nov** · **pzkko.it** — la vetrina dal pc (Spotify suo, app aperte, in ufficio / in giro) · [AP↗](https://github.com/ygpzk/AP/commit/64c89ed2a4dc099a8313276a589db41ea4aca706)
+- **26 nov** · **pzkko.it** — TikTok con la stessa dashboard di Instagram · [AP↗](https://github.com/ygpzk/AP/commit/ab473782bda61e87195b6a02061cdb2775cccdf9)
+- **26 nov** · **pzkko.it** — i regali di Instagram da decidere, nel conto · [AP↗](https://github.com/ygpzk/AP/commit/9bf1fceca848b47275640a3f244c948ac6089963)
+- **26 nov** · **pzkko.it** — TikTok in bacheca · [AP↗](https://github.com/ygpzk/AP/commit/722ffeb7b0223875bbe85c168e31dd362966e46a)
+- **26 nov** · **portfolio** — tornano pzkko e Better Call Pekko · [AP↗](https://github.com/ygpzk/AP/commit/a5ab2263e693d1b09dd2cff7d361ad734aa6ae9c)
+- **26 nov** · **studio** — le passioni e il fascicolo di Better Call Pekko · [AP↗](https://github.com/ygpzk/AP/commit/4e014ec4d20144bafb06bab64626450051858e4e)
+- **26 nov** · **albertopecchini.it** — la pagina Sicurezza, con le protezioni che ci sono davvero · [AP↗](https://github.com/ygpzk/AP/commit/966bdc533a0ba3fd918d760aab003f9eb12bbd6a)
 <!-- novita:fine -->
 
 <br>
@@ -112,9 +110,9 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 <!-- cantiere:inizio -->
 | progetto | cos’è | ultimo push |
 |:--|:--|--:|
-| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 25 nov 2026 |
+| **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 26 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 25 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 25 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 26 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -122,7 +120,7 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=b18adcec"><img src="immagini/numeri-chiaro.svg?v=50b01cd6" alt="i numeri: 785 commit, 2 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=cbe15b9d"><img src="immagini/numeri-chiaro.svg?v=148a4ad3" alt="i numeri: 804 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -137,7 +135,7 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=39ff2341"><img src="immagini/attivita-chiaro.svg?v=39b5aa26" alt="quando lavoro: 785 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=02c2dcb1"><img src="immagini/attivita-chiaro.svg?v=b37d8c2e" alt="quando lavoro: 804 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -161,7 +159,7 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2e716dcb49f5/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@2e716dcb49f5/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -173,7 +171,7 @@ Da quando Rivalta è fra i progetti nascosti (NASCOSTI in projects.js) non è pi
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/81444c061bdb8c3b5ad75d5f1a7bceea4f7d28f8"><code>81444c0</code></a> del 25 nov 2026, 22:46 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/3017ba2fe541b2090c191de334b8c38f7e8b5d50"><code>3017ba2</code></a> del 26 nov 2026, 03:08 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
