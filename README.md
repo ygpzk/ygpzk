@@ -63,28 +63,26 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; la scheda social resta larga anche senza la colonna
+### ①&nbsp; followers albertoxpecchini 12310
 
-🔧 **riparazione** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 03:08 · [`3017ba2`](https://github.com/ygpzk/AP/commit/3017ba2fe541b2090c191de334b8c38f7e8b5d50)
+🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 15:36 · [`7a0464a`](https://github.com/ygpzk/AP/commit/7a0464ac9c44ad0161aeb3712bd6f16b7414b7c0)
 
-Se la colonna dei profili non viene disegnata (estensione o errore), la griglia metteva il main nella cella da 60px: follower, testo e tessere finivano schiacciati in una striscia. Ora rail e main hanno una cella fissa, la colonna del rail si chiude da sola quando è vuota e il main prende tutta la scheda. Vale per…
-
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+6</b> in più, <b>−4</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+29</b> in più, <b>−29</b> in meno
 
 ```diff
-@@ pzkko.it/src/ @@
-! site.css  +6 −4
+@@ pzkko.it/public/media/tt/ @@
+! index.json  +29 −29
 ```
 
 ### ②&nbsp; followers albertoxpecchini 12310
 
-🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 02:36 · [`1f02136`](https://github.com/ygpzk/AP/commit/1f02136e0540829fa2609a478487a203cb8b8483)
+🧹 **manutenzione** in `tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 26 nov 2026, 14:36 · [`f4cb67d`](https://github.com/ygpzk/AP/commit/f4cb67dde46a97ab13a987a1867f7831cc44df8e)
 
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+27</b> in più, <b>−27</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+34</b> in più, <b>−34</b> in meno
 
 ```diff
 @@ pzkko.it/public/media/tt/ @@
-! index.json  +27 −27
+! index.json  +34 −34
 ```
 <!-- commit:fine -->
 
@@ -93,7 +91,7 @@ Se la colonna dei profili non viene disegnata (estensione o errore), la griglia 
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 70 commit, soprattutto su `pzkko.it` (33), `dariodonelli` (7), `direttaos` (6), `albertopecchini.it` (4).
+**negli ultimi 7 giorni** 72 commit, soprattutto su `pzkko.it` (30), `dariodonelli` (7), `ig` (6), `direttaos` (6).
 
 - **26 nov** · **pzkko.it** — TikTok con la stessa dashboard di Instagram · [AP↗](https://github.com/ygpzk/AP/commit/ab473782bda61e87195b6a02061cdb2775cccdf9)
 - **26 nov** · **pzkko.it** — i regali di Instagram da decidere, nel conto · [AP↗](https://github.com/ygpzk/AP/commit/9bf1fceca848b47275640a3f244c948ac6089963)
@@ -120,7 +118,7 @@ Se la colonna dei profili non viene disegnata (estensione o errore), la griglia 
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=cbe15b9d"><img src="immagini/numeri-chiaro.svg?v=148a4ad3" alt="i numeri: 804 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=38498e70"><img src="immagini/numeri-chiaro.svg?v=6375d887" alt="i numeri: 809 commit, 3 giorni di fila, 29 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -135,7 +133,7 @@ Se la colonna dei profili non viene disegnata (estensione o errore), la griglia 
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=02c2dcb1"><img src="immagini/attivita-chiaro.svg?v=b37d8c2e" alt="quando lavoro: 804 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=4bd89262"><img src="immagini/attivita-chiaro.svg?v=c9616ea4" alt="quando lavoro: 809 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -159,7 +157,7 @@ Se la colonna dei profili non viene disegnata (estensione o errore), la griglia 
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3da1400ca868/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -171,7 +169,7 @@ Se la colonna dei profili non viene disegnata (estensione o errore), la griglia 
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/3017ba2fe541b2090c191de334b8c38f7e8b5d50"><code>3017ba2</code></a> del 26 nov 2026, 03:08 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/7a0464ac9c44ad0161aeb3712bd6f16b7414b7c0"><code>7a0464a</code></a> del 26 nov 2026, 15:36 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
