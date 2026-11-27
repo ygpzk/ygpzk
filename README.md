@@ -63,44 +63,32 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; le domande personali non contano più come segnaposto
+### ①&nbsp; pzkko.it va in produzione dal ramo albertopecchini.it
 
-🔧 **riparazione** in `studio` · [AP](https://github.com/ygpzk/AP) su `main` · 27 nov 2026, 02:12 · [`47f7c64`](https://github.com/ygpzk/AP/commit/47f7c64cee3a8e99e26fd87b018c261434641b27)
+📝 **documenti** · [AP](https://github.com/ygpzk/AP) su `main` · 27 nov 2026, 14:15 · [`ea9cd00`](https://github.com/ygpzk/AP/commit/ea9cd000e6da9fd54042496a837e0aeedd437da7)
 
-La sezione non è mai stata visibile (tutte le risposte sono vuote) e la build continuava a segnalare 22 risposte mancanti a ogni deploy. Ora è facoltativa: finché non c'è una risposta non compare e non entra nel rapporto dei segnaposto. Quando le risposte arriveranno, la sezione torna da sola senza toccare i template.
+Il README diceva che tutti e due i progetti Vercel partono da main; per pzkko.it non è così, e un push su main da solo resta un'anteprima.
 
-> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+7</b> in più, <b>−14</b> in meno
+> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+8</b> in più, <b>−6</b> in meno
 
 ```diff
-@@ albertopecchini.it/src/ @@
-! data/tempo-libero.js  +6 −12
-! templates/routes.js  +1 −2
+! README.md  +8 −6
 ```
 
-### ②&nbsp; Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso
+### ②&nbsp; catture e follower aggiornati al 27.11
 
-✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 00:36 · [`f7766e6`](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
+🧹 **manutenzione** in `ig,tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 14:11 · [`771d7f9`](https://github.com/ygpzk/AP/commit/771d7f9c2cf8d07fe48f65047a9c93b8b004c629)
 
-Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
+Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizzazioni e like nuovi, copertina sparita.
 
-> **i file:** <b>12</b> modificati + <b>65</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+16.720</b> in più, <b>−133</b> in meno
+> **i file:** <b>2</b> modificati − <b>2</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+121</b> in più, <b>−137</b> in meno
 
 ```diff
-@@ pzkko.it/ @@
-! api/vetrina.mjs  +5 −2
-! public/assets/  (4 file modificati)
-! public/assets/i18n/en.js  +1 −1
-! public/assets/i18n/it.js  +1 −1
-! public/index.html  +1 −0
-! public/sitemap.xml  +1 −0
-! scripts/dev.mjs  +3 −1
-! src/site.css  +335 −0
-! vercel.json  +11 −1
-+ public/assets/  (9 file aggiunti)
-+ public/assets/studio/  (4 file aggiunti)
-+ public/assets/studio/esperimenti/  (11 file aggiunti)
-+ public/frontiera/esperimenti/ar/ar.js  +499 −0
-# … e altre 36 righe come queste
+@@ pzkko.it/public/media/ @@
+! ig/index.json  +12 −13
+! tt/index.json  +109 −124
+- ig/pzkko/stories/4038601552226513124.webp
+- tt/albertoxpecchini/r/7688116954741198102.webp
 ```
 <!-- commit:fine -->
 
@@ -109,14 +97,14 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 87 commit, soprattutto su `pzkko.it` (32), `tt` (13), `ig` (8), `dariodonelli` (7).
+**negli ultimi 7 giorni** 100 commit, soprattutto su `pzkko.it` (40), `tt` (13), `ig` (8), `dariodonelli` (7).
 
-- **27 nov** · **pzkko.it** — Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso · [AP↗](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
-- **27 nov** · **studio** — la cassetta degli attrezzi allineata a pzkko.it · [AP↗](https://github.com/ygpzk/AP/commit/8a8a830ea4a77fd2865a8b7c129eaad9de169053)
-- **27 nov** · **tempo** — le pagine di allora sono oscurate, con le foto rifatte · [AP↗](https://github.com/ygpzk/AP/commit/7f8c4e79152336819ab3f1bbc0a636bf0c742f97)
-- **26 nov** · **pzkko.it** — lo sfondo è la serranda col tema di Discord, piena di graffiti; tema chiaro/scuro al sole · [AP↗](https://github.com/ygpzk/AP/commit/2475f62701c26a2e71cbfd328a5982e18ffc15ae)
-- **26 nov** · **pzkko.it** — il profilo «segnaletica» (cartello con la lumaca, lavori in corso) · [AP↗](https://github.com/ygpzk/AP/commit/f438401e349e49ad0aa2a20139c48cffe4caaf6c)
-- **26 nov** · **pzkko.it** — TikTok con la stessa dashboard di Instagram · [AP↗](https://github.com/ygpzk/AP/commit/ab473782bda61e87195b6a02061cdb2775cccdf9)
+- **27 nov** · **pzkko.it** — la Frontiera rifinita, un foglio per esperimento · [AP↗](https://github.com/ygpzk/AP/commit/d616134eaf4ba5c19b0578db1580923de02bd3ce)
+- **27 nov** · **studio** — una vignetta per foglio, la pagina di prova e le foto · [AP↗](https://github.com/ygpzk/AP/commit/acb88fa600f2a313f1b74762c97302c314f7bbf4)
+- **27 nov** · **pzkko.it** — Giugnoh's Cast in bacheca, la community resta OLLARE · [AP↗](https://github.com/ygpzk/AP/commit/9b903967245691de6e56f97ad2e7adaab8aeb19f)
+- **27 nov** · **pzkko.it** — la Frontiera rifinita, un foglio per esperimento · [AP↗](https://github.com/ygpzk/AP/commit/2d42b0a0339e58af124339de95b74b71d26042e0)
+- **27 nov** · **studio** — una vignetta per foglio, la pagina di prova e le foto · [AP↗](https://github.com/ygpzk/AP/commit/fe64f1a4f8ed6aec72b5160e616ec74555f34a09)
+- **27 nov** · **pzkko.it** — Giugnoh's Cast in bacheca, la community resta OLLARE · [AP↗](https://github.com/ygpzk/AP/commit/43ea1340fd35893041a15f9d9a3da91f8f2a3810)
 <!-- novita:fine -->
 
 <br>
@@ -136,7 +124,7 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=dcd08fd7"><img src="immagini/numeri-chiaro.svg?v=1efd0b57" alt="i numeri: 826 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5ce57386"><img src="immagini/numeri-chiaro.svg?v=30fd4751" alt="i numeri: 839 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -151,7 +139,7 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=a03f6870"><img src="immagini/attivita-chiaro.svg?v=ba0f71a7" alt="quando lavoro: 826 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=fe2147dd"><img src="immagini/attivita-chiaro.svg?v=074f7abd" alt="quando lavoro: 839 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -175,7 +163,7 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: idle" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@0c2120a5733e/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@0c2120a5733e/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -187,7 +175,7 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/47f7c64cee3a8e99e26fd87b018c261434641b27"><code>47f7c64</code></a> del 27 nov 2026, 02:12 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/ea9cd000e6da9fd54042496a837e0aeedd437da7"><code>ea9cd00</code></a> del 27 nov 2026, 14:15 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
