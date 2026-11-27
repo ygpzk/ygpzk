@@ -63,7 +63,21 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso
+### ①&nbsp; le domande personali non contano più come segnaposto
+
+🔧 **riparazione** in `studio` · [AP](https://github.com/ygpzk/AP) su `main` · 27 nov 2026, 02:12 · [`47f7c64`](https://github.com/ygpzk/AP/commit/47f7c64cee3a8e99e26fd87b018c261434641b27)
+
+La sezione non è mai stata visibile (tutte le risposte sono vuote) e la build continuava a segnalare 22 risposte mancanti a ogni deploy. Ora è facoltativa: finché non c'è una risposta non compare e non entra nel rapporto dei segnaposto. Quando le risposte arriveranno, la sezione torna da sola senza toccare i template.
+
+> **i file:** <b>2</b> modificati &nbsp;·&nbsp; **le righe:** <b>+7</b> in più, <b>−14</b> in meno
+
+```diff
+@@ albertopecchini.it/src/ @@
+! data/tempo-libero.js  +6 −12
+! templates/routes.js  +1 −2
+```
+
+### ②&nbsp; Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso
 
 ✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 00:36 · [`f7766e6`](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
 
@@ -88,21 +102,6 @@ Il quarto giro del 26.11, tutto dentro il profilo e tutto vero.
 + public/frontiera/esperimenti/ar/ar.js  +499 −0
 # … e altre 36 righe come queste
 ```
-
-### ②&nbsp; i brief di Studio, Frontiera, app, strumenti, «chi sono», «da provare», Attività e Adesso
-
-📝 **documenti** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 00:35 · [`db5bff1`](https://github.com/ygpzk/AP/commit/db5bff12a785b7e27b58b78cf28620f7bd4f5346)
-
-Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro giri del 26.11: lo Studio in bacheca, la Frontiera a /frontiera/, le dieci app in-profile, la scheda Strumenti, il riquadro «chi sono», «da provare», la scheda Attività e Adesso vivo.
-
-> **i file:** <b>2</b> modificati + <b>13</b> aggiunti &nbsp;·&nbsp; **le righe:** <b>+2356</b> in più, <b>−0</b> in meno
-
-```diff
-@@ pzkko.it/ @@
-! CLAUDE.md  +67 −0
-! README.md  +119 −0
-+ design/  (13 file aggiunti)
-```
 <!-- commit:fine -->
 
 <br>
@@ -110,7 +109,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 86 commit, soprattutto su `pzkko.it` (32), `tt` (13), `ig` (8), `dariodonelli` (7).
+**negli ultimi 7 giorni** 87 commit, soprattutto su `pzkko.it` (32), `tt` (13), `ig` (8), `dariodonelli` (7).
 
 - **27 nov** · **pzkko.it** — Studio, Frontiera, dieci app, strumenti, «chi sono», «da provare», Attività e Adesso · [AP↗](https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44)
 - **27 nov** · **studio** — la cassetta degli attrezzi allineata a pzkko.it · [AP↗](https://github.com/ygpzk/AP/commit/8a8a830ea4a77fd2865a8b7c129eaad9de169053)
@@ -129,7 +128,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 27 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 25 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 26 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 27 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -137,7 +136,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5e5674f2"><img src="immagini/numeri-chiaro.svg?v=4dc7c8bd" alt="i numeri: 825 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=dcd08fd7"><img src="immagini/numeri-chiaro.svg?v=1efd0b57" alt="i numeri: 826 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -152,7 +151,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=a0528338"><img src="immagini/attivita-chiaro.svg?v=37757891" alt="quando lavoro: 825 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=a03f6870"><img src="immagini/attivita-chiaro.svg?v=ba0f71a7" alt="quando lavoro: 826 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -176,7 +175,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@3fb420e61f68/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: idle" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -188,7 +187,7 @@ Le consegne di DeepSeek (OpenCode) e le risposte di Claude Code per i quattro gi
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/f7766e64fb8b5c6b7ea277190d40a9028d776e44"><code>f7766e6</code></a> del 27 nov 2026, 00:36 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/47f7c64cee3a8e99e26fd87b018c261434641b27"><code>47f7c64</code></a> del 27 nov 2026, 02:12 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
