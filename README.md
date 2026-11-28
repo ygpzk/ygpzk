@@ -63,32 +63,28 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>i due commit più recenti, da tutti i repository e da tutti i rami. si leggono così: <code>!</code> modificato · <code>+</code> aggiunto · <code>−</code> rimosso.</sub>
 
 <!-- commit:inizio -->
-### ①&nbsp; pzkko.it va in produzione dal ramo albertopecchini.it
+### ①&nbsp; podcast con titolo, banner SVG animato e voto ogni 6 ore
 
-📝 **documenti** · [AP](https://github.com/ygpzk/AP) su `main` · 27 nov 2026, 14:15 · [`ea9cd00`](https://github.com/ygpzk/AP/commit/ea9cd000e6da9fd54042496a837e0aeedd437da7)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 22:20 · [`7a7e510`](https://github.com/ygpzk/AP/commit/7a7e5109c1a88016d3a7181aa8e4ac11189b778c)
 
-Il README diceva che tutti e due i progetti Vercel partono da main; per pzkko.it non è così, e un push su main da solo resta un'anteprima.
-
-> **i file:** <b>1</b> modificato &nbsp;·&nbsp; **le righe:** <b>+8</b> in più, <b>−6</b> in meno
+> **i file:** <b>5</b> modificati &nbsp;·&nbsp; **le righe:** <b>+470</b> in più, <b>−257</b> in meno
 
 ```diff
-! README.md  +8 −6
+@@ pzkko.it/ @@
+! README.md  +19 −12
+! public/assets/  (4 file modificati)
 ```
 
-### ②&nbsp; catture e follower aggiornati al 27.11
+### ②&nbsp; podcast con titolo, banner SVG animato e voto ogni 6 ore
 
-🧹 **manutenzione** in `ig,tt` · [AP](https://github.com/ygpzk/AP) su `albertopecchini.it` · 27 nov 2026, 14:11 · [`771d7f9`](https://github.com/ygpzk/AP/commit/771d7f9c2cf8d07fe48f65047a9c93b8b004c629)
+✨ **novità** in `pzkko.it` · [AP](https://github.com/ygpzk/AP) su `main` · 27 nov 2026, 22:20 · [`c2f8923`](https://github.com/ygpzk/AP/commit/c2f8923f605830013b1800d7b87b994fb9e712d7)
 
-Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizzazioni e like nuovi, copertina sparita.
-
-> **i file:** <b>2</b> modificati − <b>2</b> rimossi &nbsp;·&nbsp; **le righe:** <b>+121</b> in più, <b>−137</b> in meno
+> **i file:** <b>5</b> modificati &nbsp;·&nbsp; **le righe:** <b>+470</b> in più, <b>−257</b> in meno
 
 ```diff
-@@ pzkko.it/public/media/ @@
-! ig/index.json  +12 −13
-! tt/index.json  +109 −124
-- ig/pzkko/stories/4038601552226513124.webp
-- tt/albertoxpecchini/r/7688116954741198102.webp
+@@ pzkko.it/ @@
+! README.md  +19 −12
+! public/assets/  (4 file modificati)
 ```
 <!-- commit:fine -->
 
@@ -97,14 +93,14 @@ Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizza
 ## ✦ novità
 
 <!-- novita:inizio -->
-**negli ultimi 7 giorni** 100 commit, soprattutto su `pzkko.it` (40), `tt` (13), `ig` (8), `dariodonelli` (7).
+**negli ultimi 7 giorni** 102 commit, soprattutto su `pzkko.it` (42), `tt` (13), `ig` (8), `dariodonelli` (7).
 
+- **27 nov** · **pzkko.it** — podcast con titolo, banner SVG animato e voto ogni 6 ore · [AP↗](https://github.com/ygpzk/AP/commit/7a7e5109c1a88016d3a7181aa8e4ac11189b778c)
+- **27 nov** · **pzkko.it** — podcast con titolo, banner SVG animato e voto ogni 6 ore · [AP↗](https://github.com/ygpzk/AP/commit/c2f8923f605830013b1800d7b87b994fb9e712d7)
 - **27 nov** · **pzkko.it** — la Frontiera rifinita, un foglio per esperimento · [AP↗](https://github.com/ygpzk/AP/commit/d616134eaf4ba5c19b0578db1580923de02bd3ce)
 - **27 nov** · **studio** — una vignetta per foglio, la pagina di prova e le foto · [AP↗](https://github.com/ygpzk/AP/commit/acb88fa600f2a313f1b74762c97302c314f7bbf4)
 - **27 nov** · **pzkko.it** — Giugnoh's Cast in bacheca, la community resta OLLARE · [AP↗](https://github.com/ygpzk/AP/commit/9b903967245691de6e56f97ad2e7adaab8aeb19f)
 - **27 nov** · **pzkko.it** — la Frontiera rifinita, un foglio per esperimento · [AP↗](https://github.com/ygpzk/AP/commit/2d42b0a0339e58af124339de95b74b71d26042e0)
-- **27 nov** · **studio** — una vignetta per foglio, la pagina di prova e le foto · [AP↗](https://github.com/ygpzk/AP/commit/fe64f1a4f8ed6aec72b5160e616ec74555f34a09)
-- **27 nov** · **pzkko.it** — Giugnoh's Cast in bacheca, la community resta OLLARE · [AP↗](https://github.com/ygpzk/AP/commit/43ea1340fd35893041a15f9d9a3da91f8f2a3810)
 <!-- novita:fine -->
 
 <br>
@@ -124,7 +120,7 @@ Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizza
 ## ✦ i numeri
 
 <!-- numeri:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=5ce57386"><img src="immagini/numeri-chiaro.svg?v=30fd4751" alt="i numeri: 839 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/numeri-scuro.svg?v=47f58b1e"><img src="immagini/numeri-chiaro.svg?v=7ec9f79f" alt="i numeri: 841 commit, 4 giorni di fila, 36 in un giorno solo, 5 repository" width="100%"></picture>
 <!-- numeri:fine -->
 
 <picture>
@@ -139,7 +135,7 @@ Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizza
 <sub>i commit dell’ultimo anno settimana per settimana, da tutti i rami, i giorni in cui lavoro di più, a che ora finiscono i commit (ora italiana) e in quali progetti.</sub>
 
 <!-- attivita:inizio -->
-<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=fe2147dd"><img src="immagini/attivita-chiaro.svg?v=074f7abd" alt="quando lavoro: 839 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="immagini/attivita-scuro.svg?v=4146c984"><img src="immagini/attivita-chiaro.svg?v=75524b50" alt="quando lavoro: 841 commit nell’ultimo anno, settimana per settimana, per giorno e per ora" width="100%"></picture>
 <!-- attivita:fine -->
 
 <br>
@@ -163,7 +159,7 @@ Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizza
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@0c2120a5733e/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@0c2120a5733e/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@108305e8aceb/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@108305e8aceb/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
@@ -175,7 +171,7 @@ Instagram: 1.668 follower a mezzanotte, storia scaduta tolta. TikTok: visualizza
 
 <p align="center">
   <!-- piede:inizio -->
-<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/ea9cd000e6da9fd54042496a837e0aeedd437da7"><code>ea9cd00</code></a> del 27 nov 2026, 14:15 · il profilo si rifà da solo ogni 15 minuti</sub>
+<sub>ultimo commit letto: <a href="https://github.com/ygpzk/AP/commit/7a7e5109c1a88016d3a7181aa8e4ac11189b778c"><code>7a7e510</code></a> del 27 nov 2026, 22:20 · il profilo si rifà da solo ogni 15 minuti</sub>
 <!-- piede:fine -->
   <br>
   <sub>fatto a mano da <a href="https://www.albertopecchini.it">Alberto Pecchini</a> · <img src="https://komarev.com/ghpvc/?username=ygpzk&label=visite&color=007acc&style=flat-square" alt="visite" height="16" align="center"></sub>
