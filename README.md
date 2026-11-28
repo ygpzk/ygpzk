@@ -112,7 +112,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 |:--|:--|--:|
 | **[albertopecchini.it](https://www.albertopecchini.it)**<br><sub>[ygpzk/AP](https://github.com/ygpzk/AP)</sub> | il sito principale, il portfolio, e **pzkko.it**, la pagina per svago con discord dal vivo: siti statici scritti a mano, con Vite e niente framework | 27 nov 2026 |
 | **[ing. dario donelli](https://dariodonelli.vercel.app)**<br><sub>[ygpzk/dariodonelli](https://github.com/ygpzk/dariodonelli)</sub> | l’archivio dei lavori dello studio dell’ing. Dario Donelli: 34 lavori dal 2010, in bianco e nero come la sua targa | 25 nov 2026 |
-| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 27 nov 2026 |
+| **[questo profilo](https://github.com/ygpzk)**<br><sub>[ygpzk/ygpzk](https://github.com/ygpzk/ygpzk)</sub> | il README che stai leggendo: si riscrive da solo, con le immagini disegnate nei caratteri del sito | 28 nov 2026 |
 <!-- cantiere:fine -->
 
 <br>
@@ -159,7 +159,7 @@ qui c’è tutto il codice dei miei siti, dalla prima bozza alla produzione: htm
 <sub>il mio profilo discord, dal vivo: lo stato, cosa sto ascoltando o giocando, i badge e i collegamenti, nei colori del mio tema. si rifà da solo col resto del profilo; i cristalli verdi sono il mio effetto del profilo, ridisegnato a mano.</sub>
 
 <!-- pzkko:inizio -->
-<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@108305e8aceb/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@108305e8aceb/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: online" width="100%"></picture></a>
+<a href="https://pzkko.it"><picture><source media="(prefers-color-scheme: dark)" srcset="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@07f65f96d798/immagini/discord-scuro.svg"><img src="https://cdn.jsdelivr.net/gh/ygpzk/ygpzk@07f65f96d798/immagini/discord-chiaro.svg" alt="pzkko su discord, dal vivo: offline" width="100%"></picture></a>
 <!-- pzkko:fine -->
 
 <br><br>
